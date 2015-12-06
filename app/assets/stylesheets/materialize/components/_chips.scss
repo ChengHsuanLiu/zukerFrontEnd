@@ -24,4 +24,9 @@
     line-height: 32px;
     padding-left: 8px;
   }
+
+  &.primary-chip{
+    background-color: $primary-color;
+    color: #FFF;
+  }
 }

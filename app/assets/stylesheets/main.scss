@@ -261,6 +261,7 @@ footer.page-footer{
 		overflow: hidden;
 		max-height: 250px;
 		background-color: #EEE;
+		display: block;
 
 		> img{
 			height: 100%;
@@ -321,4 +322,110 @@ footer.page-footer{
   padding: 16px 4px;
   @include translate(0% , -50%);
   cursor: pointer;
+}
+
+.header-bar {
+	background-color: #FFFFFF;
+	margin-top: -10px;
+	padding: 24px 0 16px 0;
+
+	.header-bar-avatar{
+		text-align: center;
+
+		img{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+		}
+
+		.header-bar-avatar-name{
+			color: #606060;
+		}
+	}
+}
+
+.tags-container{
+	margin: 16px 0;
+}
+
+.deg360{
+	width: 100%;
+	overflow: hidden;
+
+	> img{
+		width: 100%;
+	}
+}
+
+.house-info-container--left{
+	background-color: #FFFFFF;
+	padding: 24px 8px;
+	margin: 24px 0;
+}
+
+.house-info-container--right{
+	margin-top: -0px;
+	background-color: #FFFFFF;
+
+}
+.price-info{
+	background-color: #444444;
+	color: #FFFFFF;
+	padding: 16px 16px;
+	font-size: 20px;
+	text-align: left;
+	border-radius: 2px;
+}
+
+.contact-info{
+	padding: 16px 16px;
+	color: #FFF;
+	font-size: 20px;
+	text-align: left;
+	border-radius: 2px;
+	margin-top: 8px;
+	background-color: $primary-color;
+}
+
+.comments-box{
+	padding: 24px 16px;
+	border: 1px solid #D8D9DA;
+	border-radius: 2px;
+	margin-top: -50px;
+	margin-bottom: 24px;
+
+}
+
+.comment{
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #EEE;
+	padding: 8px 0;
+
+	.comment-avatar{
+		img{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			vertical-align: middle;
+		}
+
+		.comment-avatar-name{
+			font-size: 16px;
+		}
+	}
+}
+.house-info-title{
+  margin: 12px 0;
+  display: block;
+  padding: 0 12px;
+  font-weight: 700;
+}
+.house-info-content{
+	margin: 12px 0;
+	padding: 0 12px;
+}
+
+.house-info-table{
+	background: #FFF;
+  margin: 24px 0 48px 0;
 }
