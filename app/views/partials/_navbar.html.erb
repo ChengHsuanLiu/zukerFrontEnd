@@ -1,0 +1,53 @@
+<nav class="fixed-navbar">
+  <div class="nav-wrapper">
+    <a href="#!" class="brand-logo"><%= image_tag('logo-h.png') %></a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#login" class="modal-trigger">登入/註冊</a></li>
+      <li><a href="#"><span class="nav-avatar"><%= image_tag('avatar.jpg') %>劉政軒</span></a></li>
+      <li><a href="badges.html">English</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li><a href="sass.html">Sass</a></li>
+      <li><a href="badges.html">Components</a></li>
+      <li><a href="collapsible.html">Javascript</a></li>
+      <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+  </div>
+</nav>
+<div id="login" class="modal login-popup">
+  <div class="modal-content">
+    <a class="fb-login-btn">Facebook 登入</a>
+    <div class="divider-text">
+      <hr class="divider-text-left"/>OR<hr class="divider-text-right" />
+    </div>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="account" type="text" class="validate">
+          <label for="account">帳號</label>
+        </div>
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">密碼</label>
+        </div>
+      </div>
+      <div class="row">
+        <p>
+          <a href="#">忘記密碼</a>
+        </p>
+        <btn type="submit" class="btn">登入</btn>
+        <p>
+          還沒有帳號？
+          <a href="#">註冊</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+</script>

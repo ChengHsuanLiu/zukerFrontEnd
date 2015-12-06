@@ -1,0 +1,324 @@
+a{
+	color: $primary-color;
+}
+p{
+	line-height: 1.2;
+	letter-spacing: 0.5px;
+}
+.wrapper{
+	background-color: #ECECEC;
+}
+
+.brand-logo{
+	height: 100%;
+
+	> img{
+		height: 100%;
+	}
+}
+
+.nav-wrapper{
+	padding: 0 8px;
+}
+
+.header{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 350px;
+	position: relative;
+
+	> .header-inner{
+		position: absolute;
+		@include translate(-50% , -50%);
+		top: 50%;
+		left: 50%;
+		text-align: center;
+
+		> .header-title{
+			color: #FFF;
+			text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+		}
+
+		> .header-description{
+			color: #FFF;
+			text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+
+		}
+	}
+}
+
+
+.search-bar{
+	background-color: $primary-color;
+	text-align: center;
+	padding: 24px 8px 8px 8px;
+
+	.action{
+    display: inline-block;
+    min-width: 250px;
+    margin: 8px 4px;
+	}
+
+	.submit-btn{
+		display: inline-block;
+		margin: 8px 4px;
+	}
+}
+
+.more-cta{
+	padding: 36px 0 60px 0;
+	background-color: #EEE;
+	text-align: center;
+  background-color: #4686a0;
+  background-attachment: fixed,	fixed,	fixed;
+  background-image: image-url("overlay2.png"), image-url("overlay3.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+  background-position: top left,	center center,	center center;
+  background-size: auto,	cover,	cover;
+}
+
+footer.page-footer{
+	margin-top: 0;
+}
+
+.school-list-item{
+	height: 334px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	margin: 16px 0;
+	border: 1px solid #EEE;
+
+	&.ntu{
+		background-image: image-url('school/ntu.jpg');
+	}
+	&.ntust{
+		background-image: image-url('school/ntust.jpg');
+	}
+	&.ntnu{
+		background-image: image-url('school/ntnu.gif');
+	}
+	&.tmu{
+		background-image: image-url('school/tmu.jpg');
+	}
+	&.shu{
+		background-image: image-url('school/shu.jpg');
+	}
+	&.nteu{
+		background-image: image-url('school/nteu.jpg');
+	}
+	&.nccu{
+		background-image: image-url('school/nccu.jpg');
+	}
+
+
+	> .school-name{
+		color: #FFF;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		@include translate(-50% , -50%);
+		font-size: 24px;
+		text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+
+	}
+}
+
+.divider-text {
+    width:100%;
+    text-align:center;
+}
+
+.divider-text hr {
+    margin-left:auto;
+    margin-right:auto;
+    width:40%;
+
+}
+
+.divider-text-left {
+    float:left;
+}
+
+.divider-text-right {
+    float:right;
+}
+
+.fb-login-btn{
+	background-color: #3b5998;
+	color: #FFF;
+	border-radius: 2px;
+	display: block;
+	padding: 8px 16px;
+	text-align: center;
+	margin-bottom: 16px;
+	cursor: pointer;
+}
+
+.login-popup{
+	max-height: 95%;
+	max-width: 320px;
+}
+
+.new-posts{
+	margin: 16px 0;
+
+	.new-post{
+		height: 334px;
+		padding: 12px;
+		text-align: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		> .new-post-avatar{
+			max-width: 100px;
+			margin: 12px auto;
+
+			> img{
+				border-radius: 50%;
+				width: 100%;
+				border: 2px solid #EEE;
+			}
+		}
+
+		p {
+			color: #FFF;
+			text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+			font-size: 18px;
+		}
+	}
+}
+
+.nav-avatar{
+
+	> img{
+		width: 30px;
+		height: 30px;
+		vertical-align: middle;
+		margin-right: 8px;
+		border-radius: 50%;
+	}
+}
+
+.white-text{
+	color: #FFF;
+}
+
+.hr{
+	width: 100%;
+	background-color: #EEE;
+	margin: 8px auto;
+	height: 1px;
+	border-radius: 2px;
+}
+
+.search-block{
+	background-color: #FFF;
+	margin: 16px 0 24px 0;
+	padding: 24px 8px;
+}
+
+.clear-both{
+	clear: both;
+}
+
+.float-right{
+	float: right;
+}
+
+.text-icon{
+	margin-right: 4px;
+	vertical-align: middle;
+}
+
+.equipments-select{
+	> p {
+		display: inline-block;
+		margin: 8px;
+	}
+}
+
+.inline-select{
+	> select{
+		display: inline-block;
+		max-width: 32.8%;
+	}
+}
+
+.margin-bottom-none{
+	margin-bottom: 0;
+}
+
+.house-item{
+	background-color: #FFFFFF;
+	margin-bottom: 24px;
+
+	> .house-img{
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		max-height: 250px;
+		background-color: #EEE;
+
+		> img{
+			height: 100%;
+			width: auto;
+		}
+
+		> .price{
+			background-color: rgba(#444 , .9);
+			position: absolute;
+			padding: 8px;
+			left: 0;
+			bottom: 0;
+			color: #FFF;
+			font-size: 20px;
+		}
+	}
+
+	> .house-info{
+		padding: 8px 16px;
+		letter-spacing: 1px;
+		line-height: 2;
+	}
+}
+
+#search-container{
+	position: fixed;
+	left: 0;
+	height: calc(100% - 48px);
+	overflow-y: auto;
+	width: 60%;
+
+	@include transition-certain(width, 2s);
+
+	&.map-close{
+		width: 95%;
+	}
+
+}
+
+#map-container{
+	position: fixed;
+	right: 0;
+	height: calc(100% - 48px);
+	width: 40%;
+
+	&.map-close{
+		width: 5%;
+	}
+
+	@include transition-certain(width, 2s);
+}
+
+.map-field-trigger{
+	position: absolute;
+  z-index: 2;
+  top: 50%;
+  background: #FFF;
+  padding: 16px 4px;
+  @include translate(0% , -50%);
+  cursor: pointer;
+}

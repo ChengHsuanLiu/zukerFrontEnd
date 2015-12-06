@@ -1,0 +1,281 @@
+<style type="text/css">
+	footer{
+		display: none;
+	}
+</style>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+	var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+
+	function initialize()
+	{
+	var mapProp = {
+	  center:myCenter,
+	  zoom:5,
+	  mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
+
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+	var marker=new google.maps.Marker({
+	  position:myCenter,
+	  });
+
+	marker.setMap(map);
+
+	var infowindow = new google.maps.InfoWindow({
+	  content:"Hello World!"
+	  });
+
+	infowindow.open(map,marker);
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<div class="container-fluid">
+	<div class="row margin-bottom-none">
+		<div class="col m8 s12" id="search-container">
+			<div class="search-field">
+				<div class="search-block">
+			    <form class="col s12">
+			      <div class="row">
+			      	<label>希望在哪間學校附近？</label>
+						  <select class="browser-default">
+						    <option value="" disabled selected>Choose your option</option>
+						    <option value="1">Option 1</option>
+						    <option value="2">Option 2</option>
+						    <option value="3">Option 3</option>
+						  </select>
+			      </div>
+			      <div class="hr"></div>
+			      <div class="row">
+			      	<div class="inline-select">
+			      		<label>希望在哪間學校附近？</label><br>
+							  <select class="browser-default">
+							    <option value="" disabled selected>Choose your option</option>
+							    <option value="1">Option 1</option>
+							    <option value="2">Option 2</option>
+							    <option value="3">Option 3</option>
+							  </select>
+							  <select class="browser-default">
+							    <option value="" disabled selected>Choose your option</option>
+							    <option value="1">Option 1</option>
+							    <option value="2">Option 2</option>
+							    <option value="3">Option 3</option>
+							  </select>
+							  <select class="browser-default">
+							    <option value="" disabled selected>Choose your option</option>
+							    <option value="1">Option 1</option>
+							    <option value="2">Option 2</option>
+							    <option value="3">Option 3</option>
+							  </select>
+			      	</div>
+			      </div>
+			      <div class="hr"></div>
+			      <div class="advanced-search" id="advanced-search" style="display: none;">
+			      	<div class="row">
+			      		<div class="col m6 s12">
+					        <div class="input-field">
+					          <input id="last_name" type="text" class="validate">
+					          <label for="last_name">房屋標題</label>
+					        </div>
+			      		</div>
+			      	</div>
+			      	<div class="hr"></div>
+			      	<div class="row">
+			      		<div class="col m6 s12">
+									<label>
+										需要設施
+									</label>
+									<div class="equipments-select">
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+									</div>
+			      		</div>
+			      		<div class="col m6 s12">
+									<label>
+										需要家具
+									</label>
+									<div class="equipments-select">
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+								    <p>
+								      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+								      <label for="filled-in-box">Filled in</label>
+								    </p>
+									</div>
+			      		</div>
+			      	</div>
+			      </div>
+			      <div class="search-submit-bar">
+			      	<a class="btn-outline" id="open-advnaced-search">更多篩選選項</a>
+			      	<button href="#" class="btn float-right"><i class="material-icons text-icon">search</i>搜尋</button>
+			      </div>
+		      </form>
+		      <div class="clear-both"></div>
+				</div>
+				<div class="search-result">
+					<div class="col m6 s12">
+						<div class="house-item">
+							<div class="house-img">
+								<%= image_tag('house/1.jpg') %>
+								<div class="price">
+									NT$ 8000 - 9600 / 月
+								</div>
+							</div>
+							<div class="house-info">
+							整層住家 | 2房1廳1衛 | 樓層 2/5<br>
+							<i class="material-icons text-icon">location_on</i>新北市新莊區福營路54號</div>
+						</div>
+					</div>
+					<div class="col m6 s12">
+						<div class="house-item">
+							<div class="house-img">
+								<%= image_tag('house/2.jpg') %>
+								<div class="price">
+									NT$ 8000 - 9600 / 月
+								</div>
+							</div>
+							<div class="house-info">
+							整層住家 | 2房1廳1衛 | 樓層 2/5<br>
+							<i class="material-icons text-icon">location_on</i>新北市新莊區福營路54號</div>
+						</div>
+					</div>
+					<div class="col m6 s12">
+						<div class="house-item">
+							<div class="house-img">
+								<%= image_tag('house/5.jpg') %>
+								<div class="price">
+									NT$ 8000 - 9600 / 月
+								</div>
+							</div>
+							<div class="house-info">
+							整層住家 | 2房1廳1衛 | 樓層 2/5<br>
+							<i class="material-icons text-icon">location_on</i>新北市新莊區福營路54號</div>
+						</div>
+					</div>
+					<div class="col m6 s12">
+						<div class="house-item">
+							<div class="house-img">
+								<%= image_tag('house/3.jpg') %>
+								<div class="price">
+									NT$ 8000 - 9600 / 月
+								</div>
+							</div>
+							<div class="house-info">
+							整層住家 | 2房1廳1衛 | 樓層 2/5<br>
+							<i class="material-icons text-icon">location_on</i>新北市新莊區福營路54號</div>
+						</div>
+					</div>
+					<div class="col m6 s12">
+						<div class="house-item">
+							<div class="house-img">
+								<%= image_tag('house/4.jpg') %>
+								<div class="price">
+									NT$ 8000 - 9600 / 月
+								</div>
+							</div>
+							<div class="house-info">
+							整層住家 | 2房1廳1衛 | 樓層 2/5<br>
+							<i class="material-icons text-icon">location_on</i>新北市新莊區福營路54號</div>
+						</div>
+					</div>
+					<div class="col m6 s12">
+						<div class="house-item">
+							<div class="house-img">
+								<%= image_tag('house/1.jpg') %>
+								<div class="price">
+									NT$ 8000 - 9600 / 月
+								</div>
+							</div>
+							<div class="house-info">
+							整層住家 | 2房1廳1衛 | 樓層 2/5<br>
+							<i class="material-icons text-icon">location_on</i>新北市新莊區福營路54號</div>
+						</div>
+					</div>
+					<div class="col m6 s12">
+						<div class="house-item">
+							<div class="house-img">
+								<%= image_tag('house/3.jpg') %>
+								<div class="price">
+									NT$ 8000 - 9600 / 月
+								</div>
+							</div>
+							<div class="house-info">
+							整層住家 | 2房1廳1衛 | 樓層 2/5<br>
+							<i class="material-icons text-icon">location_on</i>新北市新莊區福營路54號</div>
+						</div>
+					</div>
+					<div class="clear-both"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col m4 s12" id="map-container">
+			<div class="map-field">
+				<div id="googleMap" style="width:100%;height:100%; position: absolute"></div>
+				<div class="map-field-trigger"><i class="material-icons">keyboard_arrow_right</i></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$('#open-advnaced-search').click(function(){
+		$('#advanced-search').slideToggle(500);
+		console.log('hi');
+	})
+
+	$('.map-field-trigger').click(function(){
+		$('#map-container').addClass('map-close');
+		$('#search-container').addClass('map-close');
+		$(this).children('.material-icons').html('keyboard_arrow_left');
+	})
+</script>
