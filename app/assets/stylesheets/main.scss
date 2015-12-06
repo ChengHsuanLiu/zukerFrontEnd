@@ -1,3 +1,6 @@
+html{
+	background: #ECECEC;
+}
 a{
 	color: $primary-color;
 }
@@ -157,8 +160,49 @@ footer.page-footer{
 }
 
 .login-popup{
-	max-height: 95%;
-	max-width: 320px;
+	max-height: 85%;
+	background-color: #FFF;
+	padding: 0;
+
+	@media screen and (max-width: 992px) {
+		top: 0 !important;
+		width: 100%;
+		max-width: 100%;
+		height: 100%;
+		max-height: 100%;
+	}
+
+	> .modal-content{
+		padding: 0;
+	}
+
+	.row {
+		padding: 0;
+	}
+
+	.tab-content{
+		padding: 36px 16px 0 16px;
+	}
+
+	.top-bar{
+    background: #444343;
+    text-align: right;
+
+    @media screen and (min-width: 992px) {
+			display: none;
+    }
+
+    #close-login-popup{
+    	display: block;
+    	cursor: pointer;
+
+    	.material-icons {
+    		color: #FFF;
+    		font-size: 36px;
+    	}
+    }
+
+	}
 }
 
 .new-posts{
@@ -210,6 +254,13 @@ footer.page-footer{
 	width: 100%;
 	background-color: #EEE;
 	margin: 8px auto;
+	height: 1px;
+	border-radius: 2px;
+}
+.hr-md{
+	width: 100%;
+	background-color: #EEE;
+	margin: 16px auto;
 	height: 1px;
 	border-radius: 2px;
 }
@@ -428,4 +479,30 @@ footer.page-footer{
 .house-info-table{
 	background: #FFF;
   margin: 24px 0 48px 0;
+}
+
+.tabs .tab a{
+	color: #FFF;
+	background-color: #456A7D;
+
+	&.active{
+		color: #456A7D;
+		background-color: #FFF;
+	}
+}
+
+.tabs .indicator{
+	display: none;
+}
+
+.post-new-container{
+	background-color: #FFF;
+	padding: 8px 8px 24px 8px;
+	margin: 24px 0;
+}
+.text-center{
+	text-align: center;
+}
+.form-title{
+	margin: 32px 0 8px 0;
 }
