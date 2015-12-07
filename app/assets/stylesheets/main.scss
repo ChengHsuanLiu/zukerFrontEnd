@@ -507,3 +507,9 @@ footer.page-footer{
 .form-title{
 	margin: 32px 0 8px 0;
 }
+
+.tab-trigger-title{
+	@media screen and (max-width: 800px) {
+		display: none;
+	}
+}
