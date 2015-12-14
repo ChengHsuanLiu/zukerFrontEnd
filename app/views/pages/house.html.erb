@@ -45,26 +45,35 @@
 						<h5>F膠囊艙床位Mixed Capsule No TV</h5>
 						<p>台北市 文山區 木柵路二段23號3樓</p>
 						<div class="tags-container">
-							<div class="chip primary-chip">
+							<span class="image-icon small">
+								<%= image_tag('icons/bed.png') %>
+							</span>
+							<div class="chip secondary-chip">
 						    分租套雅房
 						  </div>
 						</div>
 						<div class="tags-container">
-							<div class="chip primary-chip">
+							<span class="image-icon small house">
+								<%= image_tag('icons/house.png') %>
+							</span>
+							<div class="chip secondary-chip">
 						    坪數：7.0坪
 						  </div>
-							<div class="chip primary-chip">
+							<div class="chip secondary-chip">
 						    樓層：3/5 F
 						  </div>
-							<div class="chip primary-chip">
+							<div class="chip secondary-chip">
 						    男女皆可
 						  </div>
 						</div>
 						<div class="tags-container">
-							<div class="chip primary-chip">
+							<span class="image-icon small">
+								<%= image_tag('icons/school.png') %>
+							</span>
+							<div class="chip secondary-chip">
 						    世新大學
 						  </div>
-							<div class="chip primary-chip">
+							<div class="chip secondary-chip">
 						    政治大學
 						  </div>
 						</div>
@@ -74,8 +83,14 @@
 							NT$ 9,800 - NT$ 9,800 / 月
 						</div>
 						<div class="contact-info">
-							<i class="material-icons text-icon">phone</i>
-							0930952077
+							<p>
+								聯絡方式<br>
+								<i class="material-icons text-icon">phone</i>0930952077<br>
+								<i class="material-icons text-icon">email</i>chenghsuango@gmail.com<br>
+								<span class="list-icon-24 text-icon"><%= image_tag('icons/line.png') %></span>0930952077<br>
+								<span class="list-icon-24 text-icon"><%= image_tag('icons/whatsapp.png') %></span>0930952077<br>
+
+							</p>
 						</div>
 					</div>
 				</div>
@@ -85,7 +100,7 @@
 </div>
 <div class="container">
 	<div class="row margin-bottom-none">
-		<div class="col m8 s12">
+		<div class="col m6 s12">
 			<div class="house-info-container--left">
 				<div class="row">
 					<div class="col m4 s12">
@@ -156,9 +171,44 @@
 						</span>
 					</div>
 					<div class="col m8 s12">
-						<ul class="house-info-content">
-							<li>電費</li>
-						</ul>
+						<div class="house-info-content house-show-page">
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/laundry.png') %></span>洗衣機</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/refrigerator.png') %></span>冰箱</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/tv.png') %></span>電視</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/air-conditioner.png') %></span>冷氣</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/water-heater.png') %></span>熱水器</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/internet.png') %></span>有線網路</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/wifi.png') %></span>無線網路</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/gas.png') %></span>天然瓦斯</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/gas-barrel.png') %></span>桶裝瓦斯</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/water-machine.png') %></span>飲水機</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/dryer.png') %></span>除濕機</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/vacuum.png') %></span>吸塵器</p>
+							</div>
+						</div>
 					</div>
 
 					<div class="col s12">
@@ -171,9 +221,32 @@
 						</span>
 					</div>
 					<div class="col m8 s12">
-						<ul class="house-info-content">
-							<li>電費</li>
-						</ul>
+						<div class="house-info-content house-show-page">
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/bed.png') %></span>床</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/closet.png') %></span>衣櫃</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/sofa.png') %></span>沙發</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/table.png') %></span>桌子</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/chair.png') %></span>椅子</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/kitchen.png') %></span>廚具</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/pillow.png') %></span>寢具</p>
+							</div>
+							<div class="col m6 s6">
+								<p><span class="house-equipment-icon"><%= image_tag('icons/cabinet.png') %></span>床頭櫃</p>
+							</div>
+						</div>
 					</div>
 
 					<div class="col s12">
@@ -241,40 +314,9 @@
 				</div>
 			</div>
 
-			<h4>出租狀況</h4>
-			<div class="house-info-table">
-				<table class="striped centered">
-	        <thead>
-	          <tr>
-	              <th>房名</th>
-	              <th>房間類型</th>
-	              <th>月租(新台幣)</th>
-	              <th>坪數</th>
-	              <th>寢具類型</th>
-	              <th>出租狀態</th>
-	          </tr>
-	        </thead>
-
-	        <tbody>
-	          <tr>
-	            <td>3樓</td>
-	            <td>套房</td>
-	            <td>9800</td>
-	            <td>7.0 坪</td>
-	            <td>9800</td>
-	            <td>可入住</td>
-	          </tr>
-	        </tbody>
-	      </table>
-			</div>
-
-
-			<div class="map-field" style="margin-bottom: 48px;">
-				<div id="googleMap" style="width:100%;height: 300px;"></div>
-			</div>
 
 		</div>
-		<div class="col m4 s12">
+		<div class="col m6 s12">
 			<div class="house-info-container--right">
 				<div class="comments-box">
 					<div class="btn-bar right">
@@ -313,6 +355,39 @@
 					</div>
 				</div>
 
+			</div>
+		</div>
+		<div class="col m12 s12">
+			<h4>出租狀況</h4>
+			<div class="house-info-table">
+				<table class="striped centered">
+	        <thead>
+	          <tr>
+	              <th>房名</th>
+	              <th>房間類型</th>
+	              <th>月租(新台幣)</th>
+	              <th>坪數</th>
+	              <th>寢具類型</th>
+	              <th>出租狀態</th>
+	          </tr>
+	        </thead>
+
+	        <tbody>
+	          <tr>
+	            <td>3樓</td>
+	            <td>套房</td>
+	            <td>9800</td>
+	            <td>7.0 坪</td>
+	            <td>9800</td>
+	            <td>可入住</td>
+	          </tr>
+	        </tbody>
+	      </table>
+			</div>
+
+
+			<div class="map-field" style="margin-bottom: 48px;">
+				<div id="googleMap" style="width:100%;height: 300px;"></div>
 			</div>
 		</div>
 	</div>

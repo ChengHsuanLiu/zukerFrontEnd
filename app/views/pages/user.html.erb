@@ -1,0 +1,341 @@
+<div class="cover-photo"  style="background-image:url(<%= image_url('cover-photo.jpg') %>);">
+</div>
+<div class="profile-action-bar">
+	<div class="container">
+		<div class="profile-user-info">
+			<span class="profile-user-avatar">
+				<%= image_tag('avatar.jpg') %>
+			</span>
+			<h5 class="profile-user-name">劉政軒</h5>
+		</div>
+		<ul>
+			<li><a href="#"><i class="material-icons text-icon">settings</i>編輯個人資料</a></li>
+			<li><a href="#"><i class="material-icons text-icon">delete</i>刪除帳號</a></li>
+		</ul>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+			<div class="profile-user">
+				<div class="col s12 m4">
+					<div class="contact-info in-profile">
+						<p>
+							聯絡方式<br>
+							<i class="material-icons text-icon">phone</i>0930952077<br>
+							<i class="material-icons text-icon">email</i>chenghsuango@gmail.com<br>
+							<span class="list-icon-24 text-icon"><%= image_tag('icons/line-grey.png') %></span>lucas_liu<br>
+							<span class="list-icon-24 text-icon"><%= image_tag('icons/whatsapp-grey.png') %></span>chenghsuango<br>
+
+						</p>
+					</div>
+				</div>
+				<div class="col s12 m8">
+		      <ul class="tabs" style="margin-top: 8px;">
+		        <li class="tab col s3"><a class="active" href="#wish-list">心願單</a></li>
+		        <li class="tab col s3"><a href="#my-houses">我的房屋</a></li>
+		        <li class="tab col s3"><a href="#comment-about-me">關於我的評價</a></li>
+		        <li class="tab col s3"><a href="#my-comments">您寫下的評價</a></li>
+		      </ul>
+					<div id="wish-list" class="col s12 profile-tab-content">
+						<div class="row">
+							<div class="col s12 m6">
+								<div class="house-item">
+									<a class="favorite-btn">
+										<i class="material-icons">favorite_border</i>
+									</a>
+									<a class="house-img" href="<%= house_path %>">
+										<%= image_tag('house/1.jpg') %>
+										<div class="price">
+											NT$ 8000 - 9600 / 月
+										</div>
+									</a>
+									<div class="house-info">
+										<h5>再興風潮</h5>
+										<span class="house-info-icon"><%= image_tag('icons/bed.png') %></span>2
+										<span class="house-info-icon"><%= image_tag('icons/sofa.png') %></span>1
+										<span class="house-info-icon"><%= image_tag('icons/shower.png') %></span>1<br>
+										整層住家 | 樓層 2/5 <br>
+										新北市新莊區福營路54號
+									</div>
+								</div>
+							</div>
+							<div class="col m6 s12">
+								<div class="house-item">
+									<a class="favorite-btn">
+										<i class="material-icons">favorite_border</i>
+									</a>
+									<a class="house-img" href="<%= house_path %>">
+										<%= image_tag('house/2.jpg') %>
+										<div class="price">
+											NT$ 8000 - 9600 / 月
+										</div>
+									</a>
+
+									<div class="house-info">
+										<h5>再興風潮</h5>
+										<span class="house-info-icon"><%= image_tag('icons/bed.png') %></span>2
+										<span class="house-info-icon"><%= image_tag('icons/sofa.png') %></span>1
+										<span class="house-info-icon"><%= image_tag('icons/shower.png') %></span>1<br>
+										整層住家 | 樓層 2/5 <br>
+										新北市新莊區福營路54號
+									</div>
+								</div>
+							</div>
+							<div class="col m6 s12">
+								<div class="house-item">
+									<a class="favorite-btn">
+										<i class="material-icons">favorite_border</i>
+									</a>
+									<a class="house-img" href="<%= house_path %>">
+										<%= image_tag('house/5.jpg') %>
+										<div class="price">
+											NT$ 8000 - 9600 / 月
+										</div>
+									</a>
+
+									<div class="house-info">
+										<h5>再興風潮</h5>
+										<span class="house-info-icon"><%= image_tag('icons/bed.png') %></span>2
+										<span class="house-info-icon"><%= image_tag('icons/sofa.png') %></span>1
+										<span class="house-info-icon"><%= image_tag('icons/shower.png') %></span>1<br>
+										整層住家 | 樓層 2/5 <br>
+										新北市新莊區福營路54號
+									</div>
+								</div>
+							</div>
+							<div class="col m6 s12">
+								<div class="house-item">
+									<a class="favorite-btn">
+										<i class="material-icons">favorite_border</i>
+									</a>
+									<a class="house-img" href="<%= house_path %>">
+										<%= image_tag('house/3.jpg') %>
+										<div class="price">
+											NT$ 8000 - 9600 / 月
+										</div>
+									</a>
+
+									<div class="house-info">
+										<h5>再興風潮</h5>
+										<span class="house-info-icon"><%= image_tag('icons/bed.png') %></span>2
+										<span class="house-info-icon"><%= image_tag('icons/sofa.png') %></span>1
+										<span class="house-info-icon"><%= image_tag('icons/shower.png') %></span>1<br>
+										整層住家 | 樓層 2/5 <br>
+										新北市新莊區福營路54號
+									</div>
+								</div>
+							</div>
+							<div class="col s12">
+								<div class="pagination-container">
+									<ul class="pagination">
+								    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+								    <li class="active"><a href="#!">1</a></li>
+								    <li class="waves-effect"><a href="#!">2</a></li>
+								    <li class="waves-effect"><a href="#!">3</a></li>
+								    <li class="waves-effect"><a href="#!">4</a></li>
+								    <li class="waves-effect"><a href="#!">5</a></li>
+								    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+								  </ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="my-houses" class="col s12 profile-tab-content">
+						<div class="row">
+							<div class="col s12 m6">
+								<div class="house-item">
+									<a class="favorite-btn">
+										<i class="material-icons">favorite_border</i>
+									</a>
+									<a class="house-img" href="<%= house_path %>">
+										<%= image_tag('house/1.jpg') %>
+										<div class="price">
+											NT$ 8000 - 9600 / 月
+										</div>
+									</a>
+									<div class="house-info">
+										<h5>再興風潮</h5>
+										<span class="house-info-icon"><%= image_tag('icons/bed.png') %></span>2
+										<span class="house-info-icon"><%= image_tag('icons/sofa.png') %></span>1
+										<span class="house-info-icon"><%= image_tag('icons/shower.png') %></span>1<br>
+										整層住家 | 樓層 2/5 <br>
+										新北市新莊區福營路54號
+									</div>
+								</div>
+							</div>
+							<div class="col m6 s12">
+								<div class="house-item">
+									<a class="favorite-btn">
+										<i class="material-icons">favorite_border</i>
+									</a>
+									<a class="house-img" href="<%= house_path %>">
+										<%= image_tag('house/2.jpg') %>
+										<div class="price">
+											NT$ 8000 - 9600 / 月
+										</div>
+									</a>
+
+									<div class="house-info">
+										<h5>再興風潮</h5>
+										<span class="house-info-icon"><%= image_tag('icons/bed.png') %></span>2
+										<span class="house-info-icon"><%= image_tag('icons/sofa.png') %></span>1
+										<span class="house-info-icon"><%= image_tag('icons/shower.png') %></span>1<br>
+										整層住家 | 樓層 2/5 <br>
+										新北市新莊區福營路54號
+									</div>
+								</div>
+							</div>
+							<div class="col m6 s12">
+								<div class="house-item">
+									<a class="favorite-btn">
+										<i class="material-icons">favorite_border</i>
+									</a>
+									<a class="house-img" href="<%= house_path %>">
+										<%= image_tag('house/5.jpg') %>
+										<div class="price">
+											NT$ 8000 - 9600 / 月
+										</div>
+									</a>
+
+									<div class="house-info">
+										<h5>再興風潮</h5>
+										<span class="house-info-icon"><%= image_tag('icons/bed.png') %></span>2
+										<span class="house-info-icon"><%= image_tag('icons/sofa.png') %></span>1
+										<span class="house-info-icon"><%= image_tag('icons/shower.png') %></span>1<br>
+										整層住家 | 樓層 2/5 <br>
+										新北市新莊區福營路54號
+									</div>
+								</div>
+							</div>
+							<div class="col m6 s12">
+								<div class="house-item">
+									<a class="favorite-btn">
+										<i class="material-icons">favorite_border</i>
+									</a>
+									<a class="house-img" href="<%= house_path %>">
+										<%= image_tag('house/3.jpg') %>
+										<div class="price">
+											NT$ 8000 - 9600 / 月
+										</div>
+									</a>
+
+									<div class="house-info">
+										<h5>再興風潮</h5>
+										<span class="house-info-icon"><%= image_tag('icons/bed.png') %></span>2
+										<span class="house-info-icon"><%= image_tag('icons/sofa.png') %></span>1
+										<span class="house-info-icon"><%= image_tag('icons/shower.png') %></span>1<br>
+										整層住家 | 樓層 2/5 <br>
+										新北市新莊區福營路54號
+									</div>
+								</div>
+							</div>
+							<div class="col s12">
+								<div class="pagination-container">
+									<ul class="pagination">
+								    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+								    <li class="active"><a href="#!">1</a></li>
+								    <li class="waves-effect"><a href="#!">2</a></li>
+								    <li class="waves-effect"><a href="#!">3</a></li>
+								    <li class="waves-effect"><a href="#!">4</a></li>
+								    <li class="waves-effect"><a href="#!">5</a></li>
+								    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+								  </ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="comment-about-me" class="col s12 profile-tab-content">
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
+						</div>
+						<div class="pagination-container">
+							<ul class="pagination">
+						    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+						    <li class="active"><a href="#!">1</a></li>
+						    <li class="waves-effect"><a href="#!">2</a></li>
+						    <li class="waves-effect"><a href="#!">3</a></li>
+						    <li class="waves-effect"><a href="#!">4</a></li>
+						    <li class="waves-effect"><a href="#!">5</a></li>
+						    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+						  </ul>
+						</div>
+					</div>
+					<div id="my-comments" class="col s12 profile-tab-content">
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
+						</div>
+						<div class="pagination-container">
+							<ul class="pagination">
+						    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+						    <li class="active"><a href="#!">1</a></li>
+						    <li class="waves-effect"><a href="#!">2</a></li>
+						    <li class="waves-effect"><a href="#!">3</a></li>
+						    <li class="waves-effect"><a href="#!">4</a></li>
+						    <li class="waves-effect"><a href="#!">5</a></li>
+						    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="clear-both"></div>
+			</div>
+		</div>
+	</div>
+</div>

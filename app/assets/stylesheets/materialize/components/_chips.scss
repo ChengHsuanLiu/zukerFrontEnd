@@ -29,4 +29,9 @@
     background-color: $primary-color;
     color: #FFF;
   }
+
+  &.secondary-chip{
+    background-color: $secondary-color;
+    color: #FFF;
+  }
 }
