@@ -809,10 +809,18 @@ footer.page-footer{
 }
 
 .outline-tag{
-	border: 2px solid $primary-color;
 	border-radius: 12px;
-	color: $primary-color;
 	padding: 4px 8px;
+	background-color: #F95A1D;
+	color: #FFF;
+	font-weight: 700;
+	margin: 2px;
+	display: inline-block;
+
+	&.secondary-color{
+		color: #616868;
+		background-color: $secondary-color;
+	}
 }
 
 .btn-bar{
@@ -954,5 +962,24 @@ strong{
 		display: none;
 		line-height: 28px;
 		letter-spacing: 1px;
+	}
+}
+
+.materialize-textarea{
+	min-height: 120px !important;
+}
+
+.form-container{
+	margin: 24px 0;
+}
+
+.padding-none{
+	padding: 0 !important;
+}
+
+.roommates-bar-image-icon{
+	> img{
+		height: 24px !important;
+		width: 24px !important;
 	}
 }

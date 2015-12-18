@@ -329,19 +329,62 @@
 			<div class="house-info-container--right">
 				<div class="comments-box">
 		      <ul class="tabs">
-		        <li class="tab col s6"><a href="#roommates-container" class="active" >徵室友</a></li>
-		        <li class="tab col s6"><a href="#comments-container">房屋評論</a></li>
+		        <li class="tab col s6"><a href="#comments-container" class="active" >房屋評論</a></li>
+		        <li class="tab col s6"><a href="#roommates-container">徵室友</a></li>
 		      </ul>
 		      <div id="roommates-container" style="margin-top: 24px;">
 						<div class="btn-bar right">
-							<a href="#" class="btn-outline"><i class="material-icons text-icon" style="margin-top: -1px;">add</i>評論</a>
+							<a target-link="#roomamtes-form-container" class="btn-outline form-container-trigger"><i class="material-icons text-icon" style="margin-top: -1px;">add</i>評論</a>
 						</div>
 						<h5>2 條評論</h5>
+						<div class="form-container" id="roomamtes-form-container" style="display:none;">
+							<form>
+				        <div class="input-field col s12">
+				        	<p style="font-size: 20px;">徵室友公告</p>
+				        	<div class="col m6 s12 padding-none">
+					        	<p>性別</p>
+					        	<div style="padding-right: 8px">
+										  <select class="browser-default">
+										    <option value="3">男女皆可</option>
+										    <option value="1">男生</option>
+										    <option value="2">女生</option>
+										  </select>
+					        	</div>
+				        	</div>
+				        	<div class="col m6 s12 padding-none">
+					        	<p>空房數</p>
+					        	<div style="padding-right: 8px">
+										  <select class="browser-default">
+										    <option value="1">1</option>
+										    <option value="2">2</option>
+										    <option value="3">3</option>
+										  </select>
+									  </div>
+				        	</div>
+				        	<div class="clear-both"></div>
+				        	<p>聯絡電話</p>
+				          <input placeholder="093xxxxxxxx" id="first_name" type="text">
+				        	<p>敘述</p>
+				          <textarea id="textarea1" class="materialize-textarea"></textarea>
+				          <div style="text-align:right">
+						        <button class="btn">新增</button>
+				          </div>
+				        </div>
+				        <div class="clear-both"></div>
+							</form>
+						</div>
 						<div class="comment">
 							<div class="comment-avatar">
 								<%= image_tag('avatar.jpg') %>
 								<span class="comment-avatar-name">劉政軒</span>
 								<small>@2015/10/8</small>
+								<div class="roommates-bar">
+									<p>
+										<span class="outline-tag secondary-color">性別：男女皆可</span>
+										<span class="outline-tag secondary-color">空房數：1</span>
+										<span class="outline-tag secondary-color">電話：0930952077</span>
+									</p>
+								</div>
 							</div>
 							<div class="comment-body">
 								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
@@ -352,6 +395,13 @@
 								<%= image_tag('avatar.jpg') %>
 								<span class="comment-avatar-name">劉政軒</span>
 								<small>@2015/10/8</small>
+								<div class="roommates-bar">
+									<p>
+										<span class="outline-tag secondary-color">性別：男女皆可</span>
+										<span class="outline-tag secondary-color">空房數：1</span>
+										<span class="outline-tag secondary-color">電話：0930952077</span>
+									</p>
+								</div>
 							</div>
 							<div class="comment-body">
 								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
@@ -362,6 +412,13 @@
 								<%= image_tag('avatar.jpg') %>
 								<span class="comment-avatar-name">劉政軒</span>
 								<small>@2015/10/8</small>
+								<div class="roommates-bar">
+									<p>
+										<span class="outline-tag secondary-color">性別：男女皆可</span>
+										<span class="outline-tag secondary-color">空房數：1</span>
+										<span class="outline-tag secondary-color">電話：0930952077</span>
+									</p>
+								</div>
 							</div>
 							<div class="comment-body">
 								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
@@ -370,9 +427,21 @@
 					</div>
 		      <div id="comments-container" style="margin-top: 24px;">
 						<div class="btn-bar right">
-							<a href="#" class="btn-outline"><i class="material-icons text-icon" style="margin-top: -1px;">add</i>評論</a>
+							<a target-link="#comments-form-container" class="btn-outline form-container-trigger"><i class="material-icons text-icon" style="margin-top: -1px;">add</i>評論</a>
 						</div>
 						<h5>3 條評論</h5>
+						<div class="form-container" id="comments-form-container" style="display:none;">
+							<form>
+				        <div class="input-field col s12">
+				        	<p style="font-size: 20px;">新增評論</p>
+				          <textarea id="textarea1" class="materialize-textarea"></textarea>
+				          <div style="text-align:right">
+						        <button class="btn">新增</button>
+				          </div>
+				        </div>
+				        <div class="clear-both"></div>
+							</form>
+						</div>
 						<div class="comment">
 							<div class="comment-avatar">
 								<%= image_tag('avatar.jpg') %>
@@ -443,8 +512,8 @@
 			</div>
 
 
-			<div class="map-field" style="margin-bottom: 48px;">
-				<div id="googleMap" style="width:100%;height: 300px;"></div>
+			<div class="map-field" style="margin-bottom: 64px;">
+				<div id="googleMap" style="width:100%;height: 400px;"></div>
 			</div>
 		</div>
 	</div>
@@ -455,6 +524,12 @@
 		var windowHeight = $(window).height();;
 		var contactInfoTop = $('#contact-info').offset().top;
 		var contactInfoHeight = $('#contact-info').height();
+
+		$('.form-container-trigger').click(function(){
+			var target = $(this).attr('target-link');
+			var target_string = target.substring(1, target.length);
+			$(target).slideToggle(500);
+		})
 
 		$(window).scroll(function(){
 			windowPostion = $(window).scrollTop();
