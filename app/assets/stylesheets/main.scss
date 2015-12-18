@@ -911,3 +911,48 @@ strong{
 	font-weight: 700;
 	font-size: 1.3em;
 }
+
+.faq-block{
+
+	margin: 24px 0;
+
+	&.active .faq-title .material-icons{
+		transform: rotate(135deg);
+		-webkit-transform: rotate(135deg);
+		-o-transform: rotate(135deg);
+		-ms-transform: rotate(135deg);
+		-moz-transform: rotate(135deg);
+	}
+
+	.faq-title{
+		border-bottom: 1px solid #999;
+    padding-bottom: 12px;
+    padding-right: 40px;
+    position: relative;
+    padding-top: 4px;
+    cursor: pointer;
+    font-size: 20px;
+
+    .material-icons{
+	    font-size: 32px;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    transition: transform 0.5s;
+	    -webkit-transition: transform 0.5s;
+	    -o-transition: transform 0.5s;
+	    -moz-transition: transform 0.5s;
+	    -ms-transition: transform 0.5s;
+    }
+
+    &:hover{
+    	opacity: 0.5;
+    }
+	}
+
+	.faq-answer{
+		display: none;
+		line-height: 28px;
+		letter-spacing: 1px;
+	}
+}
