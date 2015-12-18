@@ -58,12 +58,12 @@
 								  </select>
 							  </div>
 				        <div class="input-field col s12">
-				          <input id="first_name" type="text" class="validate">
-				          <label for="first_name">郵遞區號</label>
+				          <span>郵遞區號</span>
+				          <input id="first_name" type="text">
 				        </div>
 				        <div class="input-field col s12">
-				          <input id="last_name" type="text" class="validate">
-				          <label for="last_name">地址</label>
+				          <span>地址</span>
+				          <input id="last_name" type="text">
 				        </div>
 
 								<!--
@@ -104,7 +104,7 @@
 						  </div>
 							<div class="col m6 s12">
 								<div class="col s12">
-									<p class="form-title">你歡迎外國租客嗎？</p>
+									<p class="form-title">你歡迎外國租客嗎？<i class="material-icons tooltipped text-icon" data-position="bottom" data-delay="50" data-tooltip="承租給外國人可以做國民外交，幫助他們在陌生的土地更容易融入，並有機會獲得更好的報酬。">info_outline</i></p>
 									<div class="hr"></div>
 								  <div class="switch">
 								    <label>
@@ -114,7 +114,6 @@
 								      很樂意
 								    </label>
 								  </div>
-								  <blockquote>承租給外國人可以做國民外交，幫助他們在陌生的土地更容易融入，並有機會獲得更好的報酬。</blockquote>
 									<p class="form-title">是否需要英語協助？</p>
 									<div class="hr"></div>
 								  <div class="switch">
@@ -150,24 +149,24 @@
 
 							<div class="col m12 s12">
 				        <div class="input-field col m3 s6">
-				          <input id="first_name" type="number" class="validate">
-				          <label for="first_name">月租(新台幣)</label>
+				        	<p>月租(新台幣)</p>
+				          <input id="first_name" type="number">
 				        </div>
 				        <div class="input-field col m3 s6">
-				          <input id="first_name" type="number" class="validate">
-				          <label for="first_name">管理費</label>
+				        	<p>管理費</p>
+				          <input id="first_name" type="number">
 				        </div>
 				        <div class="input-field col m3 s6">
+				        	<p>押金 (月)</p>
 								  <select class="browser-default">
-								    <option value="" disabled selected>押金 (月)</option>
 								    <option value="1">Option 1</option>
 								    <option value="2">Option 2</option>
 								    <option value="3">Option 3</option>
 								  </select>
 				        </div>
 				        <div class="input-field col m3 s6">
+				        	<p>最短租期 (月)</p>
 								  <select class="browser-default">
-								    <option value="" disabled selected>最短租期 (月)</option>
 								    <option value="1">Option 1</option>
 								    <option value="2">Option 2</option>
 								    <option value="3">Option 3</option>
@@ -217,56 +216,56 @@
 
 							<div class="col m12 s12">
 				        <div class="input-field col m3 s6">
-				          <input id="first_name" type="number" class="validate">
-				          <label for="first_name">坪數</label>
+				        	<p>坪數</p>
+				          <input id="first_name" type="number">
 				        </div>
 				        <div class="input-field col m3 s6">
-				          <input id="first_name" type="number" class="validate">
-				          <label for="first_name">總樓層數</label>
+					        <p>總樓層數</p>
+				          <input id="first_name" type="number">
 				        </div>
 				        <div class="input-field col m3 s6">
-				          <input id="first_name" type="number" class="validate">
-				          <label for="first_name">所在樓層</label>
+				          <p>所在樓層</p>
+				          <input id="first_name" type="number">
 				        </div>
 							</div>
 
-							<div class="col m12 s12">
+							<div class="col m12 s12" style="padding: 24px 24px 0 24px;">
 								<p>特殊樓層</p>
 						    <span>
-						      <input class="with-gap" name="group1" type="radio" id="test3"  />
-						      <label for="test3">無</label>
+						      <input class="with-gap" name="group2" type="radio" id="test11"  />
+						      <label for="test11">無</label>
 						    </span>
 						    <span>
-						      <input class="with-gap" name="group1" type="radio" id="test3"  />
-						      <label for="test3">地下室</label>
+						      <input class="with-gap" name="group2" type="radio" id="test12"  />
+						      <label for="test12">地下室</label>
 						    </span>
 						    <span>
-						      <input class="with-gap" name="group1" type="radio" id="test3"  />
-						      <label for="test3">頂樓加蓋</label>
+						      <input class="with-gap" name="group2" type="radio" id="test13"  />
+						      <label for="test13">頂樓加蓋</label>
 						    </span>
 						    <span>
-						      <input class="with-gap" name="group1" type="radio" id="test3"  />
-						      <label for="test3">整棟</label>
+						      <input class="with-gap" name="group2" type="radio" id="test14"  />
+						      <label for="test14">整棟</label>
 						    </span>
 							</div>
 
-							<div class="col m12 s12">
+							<div class="col m12 s12" style="padding: 12px 24px 0 24px;">
 								<p>個人停車位</p>
 						    <span>
-						      <input class="with-gap" name="group1" type="radio" id="test3"  />
-						      <label for="test3">無</label>
+						      <input class="with-gap" name="group3" type="radio" id="test15"  />
+						      <label for="test15">無</label>
 						    </span>
 						    <span>
-						      <input class="with-gap" name="group1" type="radio" id="test3"  />
-						      <label for="test3">1個</label>
+						      <input class="with-gap" name="group3" type="radio" id="test16"  />
+						      <label for="test16">1個</label>
 						    </span>
 						    <span>
-						      <input class="with-gap" name="group1" type="radio" id="test3"  />
-						      <label for="test3">2個</label>
+						      <input class="with-gap" name="group3" type="radio" id="test17"  />
+						      <label for="test17">2個</label>
 						    </span>
 						    <span>
-						      <input class="with-gap" name="group1" type="radio" id="test3"  />
-						      <label for="test3">2個以上</label>
+						      <input class="with-gap" name="group3" type="radio" id="test18"  />
+						      <label for="test18">2個以上</label>
 						    </span>
 							</div>
 						  <div class="col s12">
@@ -279,34 +278,34 @@
 				    <div id="description" class="col s12 tab-content">
 				    	<div class="col m12 s12">
 				        <div class="input-field col s6">
-				          <input id="first_name" type="text" class="validate">
-				          <label for="first_name">中文房名</label>
+				          <p>中文房名</p>
+				          <input id="first_name" type="text">
 				        </div>
 				        <div class="input-field col s6">
-				          <input id="first_name" type="text" class="validate">
-				          <label for="first_name">英文房名</label>
+				          <p>英文房名</p>
+				          <input id="first_name" type="text">
 				        </div>
 				        <div class="input-field col s12">
+				          <p>關於房屋</p>
 				          <textarea id="textarea1" class="materialize-textarea"></textarea>
-				          <label for="textarea1">關於房屋</label>
 				        </div>
 				        <div class="input-field col s12">
+				          <p>周邊環境</p>
 				          <textarea id="textarea1" class="materialize-textarea"></textarea>
-				          <label for="textarea1">周邊環境</label>
 				        </div>
 				        <div class="col s12">
 				        	<p>適合性別</p>
 							    <span style="margin-right: 8px;">
-							      <input class="with-gap" name="group1" type="radio" id="test2"  />
-							      <label for="test2">男生</label>
+							      <input class="with-gap" name="group4" type="radio" id="test19"  />
+							      <label for="test19">男生</label>
 							    </span>
 							    <span style="margin-right: 8px;">
-							      <input class="with-gap" name="group1" type="radio" id="test3"  />
-							      <label for="test3">女生</label>
+							      <input class="with-gap" name="group4" type="radio" id="test20"  />
+							      <label for="test20">女生</label>
 							    </span>
 							    <span style="margin-right: 8px;">
-							      <input class="with-gap" name="group1" type="radio" id="test3"  />
-							      <label for="test3">男女皆可</label>
+							      <input class="with-gap" name="group4" type="radio" id="test21"  />
+							      <label for="test21">男女皆可</label>
 							    </span>
 							  </div>
 				    	</div>
@@ -321,82 +320,82 @@
 				    	<div class="col s12">
 								<p>設施</p>
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-							    <label for="filled-in-box">洗衣機</label>
+							    <input type="checkbox" class="filled-in" id="filled-in-box21" />
+							    <label for="filled-in-box21">洗衣機</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-							    <label for="filled-in-box">冰箱</label>
+							    <input type="checkbox" class="filled-in" id="filled-in-box22" />
+							    <label for="filled-in-box22">冰箱</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-							    <label for="filled-in-box">電視</label>
+							    <input type="checkbox" class="filled-in" id="filled-in-box23" />
+							    <label for="filled-in-box23">電視</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-							    <label for="filled-in-box">冷氣</label>
+							    <input type="checkbox" class="filled-in" id="filled-in-box24" />
+							    <label for="filled-in-box24">冷氣</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-							    <label for="filled-in-box">熱水器</label>
+							    <input type="checkbox" class="filled-in" id="filled-in-box25" />
+							    <label for="filled-in-box25">熱水器</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-							    <label for="filled-in-box">有線網路</label>
+							    <input type="checkbox" class="filled-in" id="filled-in-box26" />
+							    <label for="filled-in-box26">有線網路</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-							    <label for="filled-in-box">無線網路</label>
+							    <input type="checkbox" class="filled-in" id="filled-in-box27" />
+							    <label for="filled-in-box27">無線網路</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-							    <label for="filled-in-box">第四台</label>
+							    <input type="checkbox" class="filled-in" id="filled-in-box28" />
+							    <label for="filled-in-box28">第四台</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <input type="checkbox" class="filled-in" id="filled-in-box29" />
+							    <label for="filled-in-box29">天然瓦斯</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
 							    <label for="filled-in-box">天然瓦斯</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-							    <label for="filled-in-box">天然瓦斯</label>
-							  </p>
-
-							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
 							    <label for="filled-in-box">桶裝瓦斯</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
 							    <label for="filled-in-box">廚房</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
 							    <label for="filled-in-box">飲水機</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
 							    <label for="filled-in-box">除濕機</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
 							    <label for="filled-in-box">吸塵器</label>
 							  </p>
 
 							  <p class="col s6 m3">
-							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
 							    <label for="filled-in-box">微波爐</label>
 							  </p>
 							  <div class="clear-both"></div>

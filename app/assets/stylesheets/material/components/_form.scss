@@ -715,10 +715,10 @@ select:disabled {
 
   .file-path-wrapper {
     overflow: hidden;
-    padding-left: 10px;
+    padding: 0 12px;
   }
 
-  input.file-path { width: 100%; }
+  input.file-path { width: calc(100% - 12px); }
 
   .btn {
     float: left;
@@ -913,7 +913,7 @@ select {
    background-color: rgba(255, 255, 255, 0.90);
    width: 100%;
    padding: 5px;
-   border: 1px solid #f2f2f2;
+   border: 1px solid #C5C5C5;
    border-radius: 2px;
    height: 3rem;
 }

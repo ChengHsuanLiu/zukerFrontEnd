@@ -77,12 +77,20 @@
 						    政治大學
 						  </div>
 						</div>
+						<div class="tags-container">
+							<span class="image-icon small">
+								<%= image_tag('icons/rent.png') %>
+							</span>
+							<div class="chip secondary-chip">
+						    2016/1/20 可入住
+						  </div>
+						</div>
 					</div>
 					<div class="col m4 s12">
 						<div class="price-info">
 							NT$ 9,800 - NT$ 9,800 / 月
 						</div>
-						<div class="contact-info">
+						<div class="contact-info" id="contact-info">
 							<p>
 								聯絡方式<br>
 								<i class="material-icons text-icon">phone</i>0930952077<br>
@@ -91,6 +99,7 @@
 								<span class="list-icon-24 text-icon"><%= image_tag('icons/whatsapp.png') %></span>0930952077<br>
 
 							</p>
+							<p id="contact-info-trigger" class="hide">聯絡方式<i class="material-icons text-icon">keyboard_arrow_down</i></p>
 						</div>
 					</div>
 				</div>
@@ -319,40 +328,86 @@
 		<div class="col m6 s12">
 			<div class="house-info-container--right">
 				<div class="comments-box">
-					<div class="btn-bar right">
-						<a href="#" class="btn-outline"><i class="material-icons text-icon" style="margin-top: -1px;">add</i>評論</a>
+		      <ul class="tabs">
+		        <li class="tab col s6"><a href="#roommates-container" class="active" >徵室友</a></li>
+		        <li class="tab col s6"><a href="#comments-container">房屋評論</a></li>
+		      </ul>
+		      <div id="roommates-container" style="margin-top: 24px;">
+						<div class="btn-bar right">
+							<a href="#" class="btn-outline"><i class="material-icons text-icon" style="margin-top: -1px;">add</i>評論</a>
+						</div>
+						<h5>2 條評論</h5>
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
+						</div>
 					</div>
-					<h5>3 條評論</h5>
-					<div class="comment">
-						<div class="comment-avatar">
-							<%= image_tag('avatar.jpg') %>
-							<span class="comment-avatar-name">劉政軒</span>
-							<small>@2015/10/8</small>
+		      <div id="comments-container" style="margin-top: 24px;">
+						<div class="btn-bar right">
+							<a href="#" class="btn-outline"><i class="material-icons text-icon" style="margin-top: -1px;">add</i>評論</a>
 						</div>
-						<div class="comment-body">
-							<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+						<h5>3 條評論</h5>
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
+						</div>
+						<div class="comment">
+							<div class="comment-avatar">
+								<%= image_tag('avatar.jpg') %>
+								<span class="comment-avatar-name">劉政軒</span>
+								<small>@2015/10/8</small>
+							</div>
+							<div class="comment-body">
+								<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
+							</div>
 						</div>
 					</div>
-					<div class="comment">
-						<div class="comment-avatar">
-							<%= image_tag('avatar.jpg') %>
-							<span class="comment-avatar-name">劉政軒</span>
-							<small>@2015/10/8</small>
-						</div>
-						<div class="comment-body">
-							<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
-						</div>
-					</div>
-					<div class="comment">
-						<div class="comment-avatar">
-							<%= image_tag('avatar.jpg') %>
-							<span class="comment-avatar-name">劉政軒</span>
-							<small>@2015/10/8</small>
-						</div>
-						<div class="comment-body">
-							<p>Sleepbox is okay no more no less. Just be aware that the directions don't match the location it's close but unless they have updated the map then I'd call ahead and get the exact address. The Wifi is also a bit slow! But it's clean and kinda fun sleeping in a box.</p>
-						</div>
-					</div>
+
+
+
+
 				</div>
 
 			</div>
@@ -369,6 +424,7 @@
 	              <th>坪數</th>
 	              <th>寢具類型</th>
 	              <th>出租狀態</th>
+	              <th>何時可入住</th>
 	          </tr>
 	        </thead>
 
@@ -379,7 +435,8 @@
 	            <td>9800</td>
 	            <td>7.0 坪</td>
 	            <td>9800</td>
-	            <td>可入住</td>
+	            <td><span class="outline-tag">可入住</span></td>
+	            <td><span class="outline-tag">2016/10/20</span></td>
 	          </tr>
 	        </tbody>
 	      </table>
@@ -392,3 +449,39 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var windowPostion;
+		var windowHeight = $(window).height();;
+		var contactInfoTop = $('#contact-info').offset().top;
+		var contactInfoHeight = $('#contact-info').height();
+
+		$(window).scroll(function(){
+			windowPostion = $(window).scrollTop();
+			windowWidth = $(window).width();
+
+			if(windowWidth > 996){
+
+				if(windowPostion > contactInfoTop + contactInfoHeight + windowHeight ){
+					if(!$('#contact-info').hasClass('fixed-contact-info')){
+						$('#contact-info').addClass('fixed-contact-info');
+						$('#contact-info-trigger').removeClass('hide');
+						setTimeout(function(){$('#contact-info').addClass('active');}, 100);
+					}
+				}
+
+				if(windowPostion < contactInfoTop + contactInfoHeight + windowHeight ){
+					if($('#contact-info').hasClass('fixed-contact-info')){
+						$('#contact-info').removeClass('active');
+						$('#contact-info-trigger').addClass('hide');
+						setTimeout(function(){$('#contact-info').removeClass('fixed-contact-info');}, 100);
+					}
+				}
+
+
+			}
+
+		})
+
+	})
+</script>

@@ -5,7 +5,7 @@
     <ul class="right hide-on-med-and-down">
       <li><a href="#login" class="modal-trigger">登入/註冊</a></li>
       <li><a href="<%= new_path %>">立即刊登</a></li>
-      <li><a href="#"><span class="nav-avatar"><%= image_tag('avatar.jpg') %>劉政軒</span></a></li>
+      <li><a href="<%= user_path %>"><span class="nav-avatar"><%= image_tag('avatar.jpg') %>劉政軒</span></a></li>
       <li><a href="#">English</a></li>
     </ul>
     <ul class="side-nav" id="mobile-demo">
@@ -38,12 +38,12 @@
         <form class="col s12">
           <div class="row">
             <div class="input-field col s12">
-              <input id="account" type="text" class="validate">
-              <label for="account">帳號</label>
+              <p for="account">帳號</p>
+              <input id="account" type="text">
             </div>
             <div class="input-field col s12">
-              <input id="password" type="password" class="validate">
-              <label for="password">密碼</label>
+              <p for="password">密碼</p>
+              <input id="password" type="password">
             </div>
           </div>
           <div class="row">
@@ -62,28 +62,28 @@
         <form class="col s12">
           <div class="row">
             <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
-              <label for="last_name">姓氏</label>
+              <p for="last_name">姓氏</p>
+              <input id="last_name" type="text">
             </div>
             <div class="input-field col s6">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">名字</label>
+              <p for="first_name">名字</p>
+              <input id="first_name" type="text">
             </div>
             <div class="input-field col s6">
-              <input id="phone" type="text" class="validate">
-              <label for="phone">手機</label>
+              <p for="phone">手機</p>
+              <input id="phone" type="text">
             </div>
             <div class="input-field col s6">
-              <input id="email" type="email" class="validate">
-              <label for="email">email</label>
+              <p for="email">email</p>
+              <input id="email" type="email">
             </div>
             <div class="input-field col s6">
-              <input id="password" type="password" class="validate">
-              <label for="password">密碼</label>
+              <p for="password">密碼</p>
+              <input id="password" type="password">
             </div>
             <div class="input-field col s6">
-              <input id="password_confirm" type="password" class="validate">
-              <label for="password_confirm">確認密碼</label>
+              <p for="password_confirm">確認密碼</p>
+              <input id="password_confirm" type="password">
             </div>
           </div>
           <div class="row">
@@ -99,6 +99,7 @@
 <script type="text/javascript">
   $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $(".button-collapse").sideNav();
     $('.modal-trigger').leanModal();
 
     $('a[href="#login"]').click(function(){

@@ -105,6 +105,16 @@ footer.page-footer{
 	margin: 16px 0;
 	border: 1px solid #EEE;
 
+	&::after{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0,0,0,.15);
+		content: '';
+	}
+
 	&.ntu{
 		background-image: image-url('school/ntu.jpg');
 	}
@@ -136,6 +146,7 @@ footer.page-footer{
 		@include translate(-50% , -50%);
 		font-size: 24px;
 		text-shadow: 1px 1px 2px rgba(0,0,0,.2);
+		z-index: 1;
 
 	}
 }
@@ -227,10 +238,23 @@ footer.page-footer{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		position: relative;
+
+		&::after{
+			content: '';
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0,0,0,.1);
+			position: absolute;
+		}
 
 		> .new-post-avatar{
 			max-width: 100px;
-			margin: 12px auto;
+			margin: 24px auto 12px auto;
+			position: relative;
+			z-index: 1;
 
 			> img{
 				border-radius: 50%;
@@ -243,6 +267,8 @@ footer.page-footer{
 			color: #FFF;
 			text-shadow: 1px 1px 2px rgba(0,0,0,.2);
 			font-size: 18px;
+			position: relative;
+			z-index: 1;
 		}
 	}
 }
@@ -318,6 +344,33 @@ footer.page-footer{
 	background-color: #FFFFFF;
 	margin-bottom: 24px;
 	position: relative;
+
+	&.list-view{
+		background-color: #FFF;
+
+		.house-img{
+			width: 50%;
+			float: left;
+			background-color: $secondary-color;
+			max-height: 200px ;
+
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.house-info{
+			width: 50%;
+			float: left;
+		}
+
+		.favorite-btn{
+			background: #EEE;
+			padding: 9px 5px 0px 5px;
+			border-radius: 50%;
+		}
+	}
 
 	> .favorite-btn{
 		position: absolute;
@@ -477,6 +530,11 @@ footer.page-footer{
 	border-radius: 2px;
 	margin-top: 8px;
 	background-color: $primary-color;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-moz-transition: all 0.3s;
 
 	> p{
 		line-height: 2.4;
@@ -486,7 +544,23 @@ footer.page-footer{
 	&.in-profile{
 		background-color: #FFFFFF;
 		color: #575a63;
+		margin-bottom: 24px;
 	}
+
+	&.fixed-contact-info{
+		position: fixed;
+		top: -100%;
+		z-index: 990;
+
+		&.active{
+			top: calc(40px - 185px);
+
+			&:hover{
+				top: 40px;
+			}
+		}
+	}
+
 }
 
 .comments-box{
@@ -496,6 +570,10 @@ footer.page-footer{
 	margin-top: 24px;
 	margin-bottom: 24px;
 
+	h5{
+		padding: 0 12px;
+	}
+
 }
 
 .comment{
@@ -504,19 +582,22 @@ footer.page-footer{
 	padding: 16px 0 8px 0;
 
 	.comment-avatar{
-		text-align: center;
+		text-align: left;
+		padding: 0 12px;
 
 		img{
 			width: 40px;
 			height: 40px;
 			border-radius: 50%;
-			vertical-align: middle;
+			vertical-align: bottom;
+			margin-right: 4px;
 
 		}
 
 		.comment-avatar-name{
-			font-size: 18px;
-			display: block;
+			font-size: 24px;
+			display: inline-block;
+			margin-right: 4px;
 		}
 
 		small{
@@ -525,7 +606,7 @@ footer.page-footer{
 	}
 
 	.comment-body{
-		padding: 8px;
+		padding: 0 8px;
 	}
 }
 .house-info-title{
@@ -675,9 +756,6 @@ footer.page-footer{
 
 }
 
-.profile-user{
-	margin-top: 12px;
-}
 
 .profile-user-avatar{
 	display: inline-block;
@@ -728,4 +806,108 @@ footer.page-footer{
 			margin-left: 8px;
 		}
 	}
+}
+
+.outline-tag{
+	border: 2px solid $primary-color;
+	border-radius: 12px;
+	color: $primary-color;
+	padding: 4px 8px;
+}
+
+.btn-bar{
+	padding: 0 12px;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+	background-color: #FFF;
+	border: 1px solid #c5c5c5;
+	border-radius: 4px;
+	padding: 0 8px;
+	color: #575a63;
+	margin: 0px;
+	width: calc(100% - 12px);
+
+	&:focus{
+		border: 1px solid $secondary-color !important;
+		box-shadow: none !important;
+	}
+}
+.datepicker{
+	cursor: pointer;
+}
+
+.search-result-display-trigger-bar{
+	padding-bottom: 24px;
+	text-align: right;
+
+	.search-result-display-trigger{
+		display: inline-block;
+		border-radius: 50%;
+
+		&.active{
+			background-color: $secondary-color;
+			padding: 6px 5px 0 4px;
+
+			> .material-icons{
+				color: #FFF;
+			}
+		}
+	}
+
+	.material-icons{
+		font-size: 30px;
+	}
+}
+
+.content-page-header{
+	min-height: 150px;
+	padding: 24px 0;
+	text-align: center;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-bottom: 24px;
+  border-bottom: 16px solid #F3CE89;
+
+	&::after{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba($primary-color, .3);
+		content: '';
+	}
+
+	.content-page-header-title{
+		color: #FFF;
+		position: relative;
+		z-index: 1;
+		text-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	}
+
+	.content-page-header-description{
+		color: #FFF;
+		position: relative;
+		z-index: 1;
+		text-shadow: 1px 2px 3px rgba(0,0,0,.5);
+
+	}
+}
+
+
+.content-container-block{
+	background-color: #FFF;
+	padding: 12px 12px;
+	border: 1px solid #C3C3C3;
+	border-radius: 2px;
+	margin: 24px 0;
+}
+
+strong{
+	font-weight: 700;
+	font-size: 1.3em;
 }

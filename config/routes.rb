@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'new' => 'pages#new'
   get 'register' => 'pages#register'
   get 'user' => 'pages#user'
+  get 'content-page' => 'pages#content-page'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
