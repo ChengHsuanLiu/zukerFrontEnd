@@ -199,23 +199,30 @@
 							<div class="col m6 s6">
 								<p><span class="house-equipment-icon"><%= image_tag('icons/internet.png') %></span>有線網路</p>
 							</div>
-							<div class="col m6 s6">
-								<p><span class="house-equipment-icon"><%= image_tag('icons/wifi.png') %></span>無線網路</p>
+							<div class="clear-both"></div>
+							<div class="col s12 hide-block" id="equipment-block">
+								<div class="col m6 s6">
+									<p><span class="house-equipment-icon"><%= image_tag('icons/wifi.png') %></span>無線網路</p>
+								</div>
+								<div class="col m6 s6">
+									<p><span class="house-equipment-icon"><%= image_tag('icons/gas.png') %></span>天然瓦斯</p>
+								</div>
+								<div class="col m6 s6">
+									<p><span class="house-equipment-icon"><%= image_tag('icons/gas-barrel.png') %></span>桶裝瓦斯</p>
+								</div>
+								<div class="col m6 s6">
+									<p><span class="house-equipment-icon"><%= image_tag('icons/water-machine.png') %></span>飲水機</p>
+								</div>
+								<div class="col m6 s6">
+									<p><span class="house-equipment-icon"><%= image_tag('icons/dryer.png') %></span>除濕機</p>
+								</div>
+								<div class="col m6 s6">
+									<p><span class="house-equipment-icon"><%= image_tag('icons/vacuum.png') %></span>吸塵器</p>
+								</div>
+								<div class="clear-both"></div>
 							</div>
-							<div class="col m6 s6">
-								<p><span class="house-equipment-icon"><%= image_tag('icons/gas.png') %></span>天然瓦斯</p>
-							</div>
-							<div class="col m6 s6">
-								<p><span class="house-equipment-icon"><%= image_tag('icons/gas-barrel.png') %></span>桶裝瓦斯</p>
-							</div>
-							<div class="col m6 s6">
-								<p><span class="house-equipment-icon"><%= image_tag('icons/water-machine.png') %></span>飲水機</p>
-							</div>
-							<div class="col m6 s6">
-								<p><span class="house-equipment-icon"><%= image_tag('icons/dryer.png') %></span>除濕機</p>
-							</div>
-							<div class="col m6 s6">
-								<p><span class="house-equipment-icon"><%= image_tag('icons/vacuum.png') %></span>吸塵器</p>
+							<div class="col s12" style="text-align: right; padding: 0 24px;">
+								<a class="hide-block-trigger" target-id="#equipment-block">更多內容...</a>
 							</div>
 						</div>
 					</div>
@@ -243,18 +250,28 @@
 							<div class="col m6 s6">
 								<p><span class="house-equipment-icon"><%= image_tag('icons/table.png') %></span>桌子</p>
 							</div>
-							<div class="col m6 s6">
-								<p><span class="house-equipment-icon"><%= image_tag('icons/chair.png') %></span>椅子</p>
+
+							<div class="clear-both"></div>
+							<div class="col s12 hide-block" id="furniture-block">
+
+								<div class="col m6 s6">
+									<p><span class="house-equipment-icon"><%= image_tag('icons/chair.png') %></span>椅子</p>
+								</div>
+								<div class="col m6 s6">
+									<p><span class="house-equipment-icon"><%= image_tag('icons/kitchen.png') %></span>廚具</p>
+								</div>
+								<div class="col m6 s6">
+									<p><span class="house-equipment-icon"><%= image_tag('icons/pillow.png') %></span>寢具</p>
+								</div>
+								<div class="col m6 s6">
+									<p><span class="house-equipment-icon"><%= image_tag('icons/cabinet.png') %></span>床頭櫃</p>
+								</div>
 							</div>
-							<div class="col m6 s6">
-								<p><span class="house-equipment-icon"><%= image_tag('icons/kitchen.png') %></span>廚具</p>
+
+							<div class="col s12" style="text-align: right; padding: 0 24px;">
+								<a class="hide-block-trigger" target-id="#furniture-block">更多內容...</a>
 							</div>
-							<div class="col m6 s6">
-								<p><span class="house-equipment-icon"><%= image_tag('icons/pillow.png') %></span>寢具</p>
-							</div>
-							<div class="col m6 s6">
-								<p><span class="house-equipment-icon"><%= image_tag('icons/cabinet.png') %></span>床頭櫃</p>
-							</div>
+
 						</div>
 					</div>
 
@@ -527,7 +544,12 @@
 
 		$('.form-container-trigger').click(function(){
 			var target = $(this).attr('target-link');
-			var target_string = target.substring(1, target.length);
+			$(target).slideToggle(500);
+		})
+
+		$('.hide-block-trigger').click(function(){
+			var target = $(this).attr('target-id');
+			console.log(target);
 			$(target).slideToggle(500);
 		})
 
