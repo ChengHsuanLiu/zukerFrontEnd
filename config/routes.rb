@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'search' => 'pages#search'
   get 'house' => 'pages#house'
   get 'new' => 'pages#new'
+  get 'new2' => 'pages#new2'
   get 'register' => 'pages#register'
   get 'user' => 'pages#user'
   get 'content-page' => 'pages#content-page'

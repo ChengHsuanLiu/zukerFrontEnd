@@ -1,0 +1,688 @@
+<div class="container">
+	<div class="row">
+		<div class="col s12">
+			<div class="post-new-container">
+				<form>
+					<div class="row">
+						<div class="col s12">
+							<div class="col s12">
+								<button class="btn float right" style="margin-top: 16px;">預覽房屋頁面</button>
+								<h4>新增房屋</h4>
+								<br>
+							</div>
+						</div>
+				    <div class="col s12">
+				      <ul class="tabs new-post-tabs">
+				        <li class="tab col s4 m2"><a class="active" href="#basic"><i class="material-icons text-icon">info_outline</i><span class="tab-trigger-title">基礎資訊</span></a></li>
+				        <li class="tab col s4 m2"><a href="#space"><i class="material-icons text-icon">attach_money</i><span class="tab-trigger-title">空間及價格</a></li>
+				        <li class="tab col s4 m2"><a href="#description"><i class="material-icons text-icon">description</i><span class="tab-trigger-title">描述</span></a></li>
+				        <li class="tab col s4 m2"><a href="#amenity"><i class="material-icons text-icon">hotel</i><span class="tab-trigger-title">家具及設施</span></a></li>
+				        <li class="tab col s4 m2"><a href="#photo"><i class="material-icons text-icon">add_a_photo</i><span class="tab-trigger-title">圖片</span></a></li>
+				        <li class="tab col s4 m2"><a href="#rooms"><i class="material-icons text-icon">date_range</i><span class="tab-trigger-title">房間</span></a></li>
+				      </ul>
+				    </div>
+
+				    <div id="basic" class="col s12 tab-content">
+
+							<div class="col m6 s12">
+								<div class="col s12">
+									<p class="form-title">房屋類型</p>
+									<div class="hr"></div>
+							    <span style="margin-right: 8px;">
+							      <input class="with-gap" name="group1" type="radio" id="test2"  />
+							      <label for="test2">整層住家</label>
+							    </span>
+							    <span style="margin-right: 8px;">
+							      <input class="with-gap" name="group1" type="radio" id="test3"  />
+							      <label for="test3">分租套雅房</label>
+							    </span>
+							  </div>
+							  <div class="col s12">
+								  <p class="form-title">房屋地址</p>
+								  <div class="hr"></div>
+							  </div>
+							  <div class="col m6 s12">
+								  <select class="browser-default">
+								    <option value="" disabled selected>縣市</option>
+								    <option value="1">Option 1</option>
+								    <option value="2">Option 2</option>
+								    <option value="3">Option 3</option>
+								  </select>
+							  </div>
+							  <div class="col m6 s12">
+								  <select class="browser-default">
+								    <option value="" disabled selected>鄉鎮市區</option>
+								    <option value="1">Option 1</option>
+								    <option value="2">Option 2</option>
+								    <option value="3">Option 3</option>
+								  </select>
+							  </div>
+				        <div class="input-field col s12">
+				          <span>郵遞區號</span>
+				          <input id="first_name" type="text">
+				        </div>
+				        <div class="input-field col s12">
+				          <span>地址</span>
+				          <input id="last_name" type="text">
+				        </div>
+
+								<!--
+							  <div class="col s12">
+								  <p class="form-title">您的房子在哪些學校附近呢？</p>
+								  <div class="hr"></div>
+							  </div>
+							    <p class="col m6 s12">
+							      <input type="checkbox" class="filled-in" id="filled-in-box1" />
+							      <label for="filled-in-box1">政治大學</label>
+							    </p>
+							    <p class="col m6 s12">
+							      <input type="checkbox" class="filled-in" id="filled-in-box2" />
+							      <label for="filled-in-box2">台灣大學</label>
+							    </p>
+							    <p class="col m6 s12">
+							      <input type="checkbox" class="filled-in" id="filled-in-box3" />
+							      <label for="filled-in-box3">世新大學</label>
+							    </p>
+							    <p class="col m6 s12">
+							      <input type="checkbox" class="filled-in" id="filled-in-box4" />
+							      <label for="filled-in-box4">台北教育大學</label>
+							    </p>
+							    <p class="col m6 s12">
+							      <input type="checkbox" class="filled-in" id="filled-in-box5" />
+							      <label for="filled-in-box5">台科大</label>
+							    </p>
+							    <p class="col m6 s12">
+							      <input type="checkbox" class="filled-in" id="filled-in-box6" />
+							      <label for="filled-in-box6">台師大</label>
+							    </p>
+							    <p class="col m6 s12">
+							      <input type="checkbox" class="filled-in" id="filled-in-box7" />
+							      <label for="filled-in-box7">北醫大學</label>
+							    </p>
+								-->
+
+						  </div>
+							<div class="col m6 s12">
+								<div class="col s12">
+									<p class="form-title">你歡迎外國租客嗎？<i class="material-icons tooltipped text-icon" data-position="bottom" data-delay="50" data-tooltip="承租給外國人可以做國民外交，幫助他們在陌生的土地更容易融入，並有機會獲得更好的報酬。">info_outline</i></p>
+									<div class="hr"></div>
+								  <div class="switch">
+								    <label>
+								      不需要
+								      <input type="checkbox">
+								      <span class="lever"></span>
+								      很樂意
+								    </label>
+								  </div>
+									<p class="form-title">是否需要英語協助？</p>
+									<div class="hr"></div>
+								  <div class="switch">
+								    <label>
+								      不需要
+								      <input type="checkbox">
+								      <span class="lever"></span>
+								      需要
+								    </label>
+								  </div>
+							  </div>
+								<div class="col s12">
+									<p class="form-title">是否隱藏地址</p>
+									<div class="hr"></div>
+								  <div class="switch">
+								    <label>
+								      不隱藏
+								      <input type="checkbox">
+								      <span class="lever"></span>
+								      隱藏
+								    </label>
+								  </div>
+							  </div>
+						  </div>
+						  <div class="col s12">
+								<div class="text-center" style="margin-top: 48px;">
+									<button class="btn-large">下一步</button>
+								</div>
+						  </div>
+				    </div>
+
+				    <div id="space" class="col s12 tab-content">
+
+							<div class="col m12 s12">
+				        <div class="input-field col m3 s6">
+				        	<p>月租(新台幣)</p>
+				          <input id="first_name" type="number">
+				        </div>
+				        <div class="input-field col m3 s6">
+				        	<p>管理費</p>
+				          <input id="first_name" type="number">
+				        </div>
+				        <div class="input-field col m3 s6">
+				        	<p>押金 (月)</p>
+								  <select class="browser-default">
+								    <option value="1">Option 1</option>
+								    <option value="2">Option 2</option>
+								    <option value="3">Option 3</option>
+								  </select>
+				        </div>
+				        <div class="input-field col m3 s6">
+				        	<p>最短租期 (月)</p>
+								  <select class="browser-default">
+								    <option value="1">Option 1</option>
+								    <option value="2">Option 2</option>
+								    <option value="3">Option 3</option>
+								  </select>
+				        </div>
+							</div>
+
+
+							<div class="col m12 s12">
+				        <div class="input-field col m3 s6">
+				        	<p>臥室</p>
+								  <select class="browser-default">
+								    <option value="" disabled selected>有幾個？</option>
+								    <option value="1">Option 1</option>
+								    <option value="2">Option 2</option>
+								    <option value="3">Option 3</option>
+								  </select>
+				        </div>
+				        <div class="input-field col m3 s6">
+				        	<p>公共空間</p>
+								  <select class="browser-default">
+								    <option value="" disabled selected>有幾個？</option>
+								    <option value="1">Option 1</option>
+								    <option value="2">Option 2</option>
+								    <option value="3">Option 3</option>
+								  </select>
+				        </div>
+				        <div class="input-field col m3 s6">
+				        	<p>浴室</p>
+								  <select class="browser-default">
+								    <option value="" disabled selected>有幾個？</option>
+								    <option value="1">Option 1</option>
+								    <option value="2">Option 2</option>
+								    <option value="3">Option 3</option>
+								  </select>
+				        </div>
+				        <div class="input-field col m3 s6">
+				        	<p>陽台</p>
+								  <select class="browser-default">
+								    <option value="" disabled selected>有幾個？</option>
+								    <option value="1">Option 1</option>
+								    <option value="2">Option 2</option>
+								    <option value="3">Option 3</option>
+								  </select>
+				        </div>
+							</div>
+
+							<div class="col m12 s12">
+				        <div class="input-field col m3 s6">
+				        	<p>坪數</p>
+				          <input id="first_name" type="number">
+				        </div>
+				        <div class="input-field col m3 s6">
+					        <p>總樓層數</p>
+				          <input id="first_name" type="number">
+				        </div>
+				        <div class="input-field col m3 s6">
+				          <p>所在樓層</p>
+				          <input id="first_name" type="number">
+				        </div>
+							</div>
+
+							<div class="col m12 s12" style="padding: 24px 24px 0 24px;">
+								<p>特殊樓層</p>
+						    <span>
+						      <input class="with-gap" name="group2" type="radio" id="test11"  />
+						      <label for="test11">無</label>
+						    </span>
+						    <span>
+						      <input class="with-gap" name="group2" type="radio" id="test12"  />
+						      <label for="test12">地下室</label>
+						    </span>
+						    <span>
+						      <input class="with-gap" name="group2" type="radio" id="test13"  />
+						      <label for="test13">頂樓加蓋</label>
+						    </span>
+						    <span>
+						      <input class="with-gap" name="group2" type="radio" id="test14"  />
+						      <label for="test14">整棟</label>
+						    </span>
+							</div>
+
+							<div class="col m12 s12" style="padding: 12px 24px 0 24px;">
+								<p>個人停車位</p>
+						    <span>
+						      <input class="with-gap" name="group3" type="radio" id="test15"  />
+						      <label for="test15">無</label>
+						    </span>
+						    <span>
+						      <input class="with-gap" name="group3" type="radio" id="test16"  />
+						      <label for="test16">1個</label>
+						    </span>
+						    <span>
+						      <input class="with-gap" name="group3" type="radio" id="test17"  />
+						      <label for="test17">2個</label>
+						    </span>
+						    <span>
+						      <input class="with-gap" name="group3" type="radio" id="test18"  />
+						      <label for="test18">2個以上</label>
+						    </span>
+							</div>
+						  <div class="col s12">
+								<div class="text-center" style="margin-top: 48px;">
+									<button class="btn-large">下一步</button>
+								</div>
+						  </div>
+				    </div>
+
+				    <div id="description" class="col s12 tab-content">
+				    	<div class="col m12 s12">
+				        <div class="input-field col s6">
+				          <p>中文房名</p>
+				          <input id="first_name" type="text">
+				        </div>
+				        <div class="input-field col s6">
+				          <p>英文房名</p>
+				          <input id="first_name" type="text">
+				        </div>
+				        <div class="input-field col s12">
+				          <p>關於房屋</p>
+				          <textarea id="textarea1" class="materialize-textarea"></textarea>
+				        </div>
+				        <div class="input-field col s12">
+				          <p>周邊環境</p>
+				          <textarea id="textarea1" class="materialize-textarea"></textarea>
+				        </div>
+				        <div class="col s12">
+				        	<p>適合性別</p>
+							    <span style="margin-right: 8px;">
+							      <input class="with-gap" name="group4" type="radio" id="test19"  />
+							      <label for="test19">男生</label>
+							    </span>
+							    <span style="margin-right: 8px;">
+							      <input class="with-gap" name="group4" type="radio" id="test20"  />
+							      <label for="test20">女生</label>
+							    </span>
+							    <span style="margin-right: 8px;">
+							      <input class="with-gap" name="group4" type="radio" id="test21"  />
+							      <label for="test21">男女皆可</label>
+							    </span>
+							  </div>
+				    	</div>
+						  <div class="col s12">
+								<div class="text-center" style="margin-top: 48px;">
+									<button class="btn-large">下一步</button>
+								</div>
+						  </div>
+				    </div>
+
+				    <div id="amenity" class="col s12 tab-content">
+				    	<div class="col s12">
+								<p>設施</p>
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box21" />
+							    <label for="filled-in-box21">洗衣機</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box22" />
+							    <label for="filled-in-box22">冰箱</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box23" />
+							    <label for="filled-in-box23">電視</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box24" />
+							    <label for="filled-in-box24">冷氣</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box25" />
+							    <label for="filled-in-box25">熱水器</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box26" />
+							    <label for="filled-in-box26">有線網路</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box27" />
+							    <label for="filled-in-box27">無線網路</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box28" />
+							    <label for="filled-in-box28">第四台</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box29" />
+							    <label for="filled-in-box29">天然瓦斯</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
+							    <label for="filled-in-box">天然瓦斯</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
+							    <label for="filled-in-box">桶裝瓦斯</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
+							    <label for="filled-in-box">廚房</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
+							    <label for="filled-in-box">飲水機</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
+							    <label for="filled-in-box">除濕機</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
+							    <label for="filled-in-box">吸塵器</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" />
+							    <label for="filled-in-box">微波爐</label>
+							  </p>
+							  <div class="clear-both"></div>
+
+							  <div class="hr"></div>
+
+				    	</div>
+				    	<div class="col s12">
+								<p>家具</p>
+							  <p  class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">床</label>
+							  </p>
+
+							  <p  class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">衣櫃</label>
+							  </p>
+
+							  <p  class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">沙發</label>
+							  </p>
+
+							  <p  class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">桌子</label>
+							  </p>
+
+							  <p  class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">椅子</label>
+							  </p>
+
+							  <p  class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">廚具</label>
+							  </p>
+
+							  <p  class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">寢具</label>
+							  </p>
+
+							  <p  class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">床頭櫃</label>
+							  </p>
+							  <div class="clear-both"></div>
+							  <div class="hr"></div>
+
+				    	</div>
+				    	<div class="col s12">
+								<p>額外費用</p>
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">清潔費</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">第四台</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">網路費</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">電費</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">水費</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">瓦斯費</label>
+							  </p>
+							  <div class="clear-both"></div>
+							  <div class="hr"></div>
+				    	</div>
+
+				    	<div class="col s12">
+								<p>公共設施</p>
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">停車場</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">管理員</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">電梯</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">垃圾場</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">身障人士設施</label>
+							  </p>
+							  <div class="clear-both"></div>
+							  <div class="hr"></div>
+				    	</div>
+				    	<div class="col s12">
+								<p>住客規定</p>
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">歡迎家庭</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">可養寵物</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">可開伙</label>
+							  </p>
+							  <div class="clear-both"></div>
+							  <div class="hr"></div>
+
+				    	</div>
+				    	<div class="col s12">
+								<p>安全設施</p>
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">煙霧探測器</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">滅火器</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">一氧化碳探測器</label>
+							  </p>
+
+							  <p class="col s6 m3">
+							    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+							    <label for="filled-in-box">急救包</label>
+							  </p>
+							  <div class="clear-both"></div>
+
+				    	</div>
+						  <div class="col s12">
+								<div class="text-center" style="margin-top: 48px;">
+									<button class="btn-large">下一步</button>
+								</div>
+						  </div>
+				    	<div class="clear-both"></div>
+				    </div>
+
+				    <div id="photo" class="col s12 tab-content">
+				    	<div class="photo-upload-container">
+				    		<div class="upload-bar">
+
+							    <div class="file-field input-field">
+							      <div class="btn">
+							        <span>選擇檔案</span>
+							        <input type="file">
+							      </div>
+							      <div class="file-path-wrapper">
+							        <input class="file-path validate" type="text">
+							      </div>
+							    </div>
+
+
+
+				    		</div>
+				    	</div>
+
+				    </div>
+
+				    <div id="rooms" class="col s12 tab-content">
+				    	<div class="col s12">
+				    		<div class="btn-bar align-right">
+				    			<a href="#" class="btn">新增房間</a>
+				    		</div>
+				    		<div class="rooms-table-container">
+									<table class="striped centered rooms-table">
+						        <thead>
+						          <tr>
+						              <th>房名</th>
+						              <th>房間類型</th>
+						              <th>床型</th>
+						              <th>月租(新台幣)</th>
+						              <th>坪數</th>
+						              <th>最短租期(月)</th>
+						              <th>何時可正式出租</th>
+						              <th></th>
+						          </tr>
+						        </thead>
+
+						        <tbody>
+						          <tr>
+						            <td><input type="text" value="永和豐華" /></td>
+						            <td>
+													<select class="browser-default">
+													  <option value="2">套房</option>
+													  <option value="3">雅房</option>
+													</select>
+												</td>
+						            <td>
+													<select class="browser-default">
+													  <option value="1">單人床</option>
+													  <option value="2">雙人床</option>
+													</select>
+												</td>
+						            <td><input type="number" value="9800" /></td>
+						            <td><input type="number" value="7" /></td>
+						            <td><input type="number" value="7" /></td>
+						            <td><input type="date" class="datepicker"></td>
+						            <td><a href="#">刪除</a></td>
+						          </tr>
+						          <tr>
+						            <td><input type="text" value="永和豐華" /></td>
+						            <td>
+													<select class="browser-default">
+													  <option value="2">套房</option>
+													  <option value="3">雅房</option>
+													</select>
+												</td>
+						            <td>
+													<select class="browser-default">
+													  <option value="1">單人床</option>
+													  <option value="2">雙人床</option>
+													</select>
+												</td>
+						            <td><input type="number" value="9800" /></td>
+						            <td><input type="number" value="7" /></td>
+						            <td><input type="number" value="7" /></td>
+						            <td><input type="date" class="datepicker"></td>
+						            <td><a href="#">刪除</a></td>
+						          </tr>
+						          <tr>
+						            <td><input type="text" value="永和豐華" /></td>
+						            <td>
+													<select class="browser-default">
+													  <option value="2">套房</option>
+													  <option value="3">雅房</option>
+													</select>
+												</td>
+						            <td>
+													<select class="browser-default">
+													  <option value="1">單人床</option>
+													  <option value="2">雙人床</option>
+													</select>
+												</td>
+						            <td><input type="number" value="9800" /></td>
+						            <td><input type="number" value="7" /></td>
+						            <td><input type="number" value="7" /></td>
+						            <td><input type="date" class="datepicker"></td>
+						            <td><a href="#">刪除</a></td>
+						          </tr>
+						        </tbody>
+						      </table>
+				    		</div>
+				    	</div>
+				    </div>
+
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+</script>
