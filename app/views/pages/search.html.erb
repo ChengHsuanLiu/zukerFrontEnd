@@ -69,6 +69,15 @@
 							    <option value="2">Option 2</option>
 							    <option value="3">Option 3</option>
 							  </select>
+								<div class="input-field">
+									<p>多重選項</p>
+							    <select multiple>
+							      <option value="" disabled selected>Choose your option</option>
+							      <option value="1">Option 1</option>
+							      <option value="2">Option 2</option>
+							      <option value="3">Option 3</option>
+							    </select>
+							  </div>
 			      	</div>
 			      </div>
 			      <div class="advanced-search" id="advanced-search" style="display: none;">
@@ -384,5 +393,8 @@
 		$('#map-container').toggleClass('map-close');
 		$('#search-container').toggleClass('map-close');
 		$(this).children('.material-icons').html('keyboard_arrow_left');
+	})
+	$(document).ready(function(){
+		$('select').material_select();
 	})
 </script>
