@@ -23,6 +23,10 @@
   </div>
 </div>
 
+<div class="controll-btns">
+  <a class="controll-btn up"><i class="material-icons">keyboard_arrow_up</i></a>
+  <a class="controll-btn down"><i class="material-icons">keyboard_arrow_down</i></a>
+</div>
 
 <div class="scroll-page-container">
 <div class="scroll-page-container-inner">
@@ -226,26 +230,25 @@
   var current_page = 1;
   var state = 'active';
 
-  $(window).bind('mousewheel', function(event) {
-    if (event.originalEvent.wheelDelta >= 0 && state == 'active') {
-
-      if(current_page == 1){
-        return false;
+  $(document).on('click', '.controll-btn', function(){
+    if(state == 'active'){
+      if($(this).hasClass('up')){
+        if(current_page == 1){
+          return false;
+        }
+        scrollPageFunc(current_page - 1, 'goup');
       }
-      scrollPageFunc(current_page - 1);
-      current_page = current_page - 1;
-      state = 'disabled';
-    }
-    else if(state == 'active'){
-
-      if(current_page == 7){
-        return false;
+      if($(this).hasClass('down')){
+        if(current_page == 7){
+          return false;
+        }
+        scrollPageFunc(current_page + 1, 'godown');
       }
-      scrollPageFunc(current_page + 1);
-      current_page = current_page + 1;
-      state = 'disabled';
+    }else{
+      console('disabled state');
     }
-  });
+  })
+
 
   $(document).on('click', '.dot', function(){
     var page_num = $(this).attr('page-order');
@@ -255,17 +258,26 @@
   })
 
 
-  function scrollPageFunc(page_num){
+  function scrollPageFunc(page_num, dir){
     var page_num = page_num;
-    //var translateValue = (page_num - 1)*(-100);
+    var dir = dir;
 
     if(page_num > 7 || page_num < 1){
       return false;
     }
 
+    if(dir == 'goup'){
+      current_page = current_page - 1;
+    }
+
+    if(dir == 'godown'){
+      current_page = current_page + 1;
+    }
+
+
+    state = 'disabled';
     $('.dot[page-order="' + page_num + '"]').addClass('active');
     $('.dot[page-order="' + page_num + '"]').siblings('.dot').removeClass('active');
-
     for(i=1 ; i<=7; i++){
       var translateValue = (i - page_num)*(100);
       console.log(translateValue);
@@ -280,7 +292,6 @@
       $('.box-image.intro-' + j).addClass('active');
     };
 
-    state = 'active';
     setTimeout(restTranslateState, 2000);
   }
 
@@ -288,5 +299,24 @@
     state = 'active';
     console.log('reset');
   }
+
+  $(window).bind('mousewheel', function(event) {
+    if (event.originalEvent.wheelDelta >= 0) {
+      if(state == 'active'){
+        if(current_page == 1){
+          return false;
+        }
+        scrollPageFunc(current_page - 1, 'goup');
+      }
+    }
+    else{
+      if(state == 'active'){
+        if(current_page == 7){
+          return false;
+        }
+        scrollPageFunc(current_page + 1, 'godown');
+      }
+    }
+  });
 
 </script>
