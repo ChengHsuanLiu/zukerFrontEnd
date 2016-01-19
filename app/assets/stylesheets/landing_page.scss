@@ -195,7 +195,8 @@ i{
 // ---------
 
 header{
-	background-image: image-url('landing-bg.jpg');
+	background-image: image-url('header-bg.svg');
+	//background-color: #7B96A5;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -210,17 +211,23 @@ header{
 		right: 0;
 		left: 0;
 		bottom: 0;
-		background-color: rgba(0, 0, 0, 0.2);
+		background-color: rgba(0, 0, 0, 0);
 	}
 
 	> .header-slogan{
 		position: relative;
 		color: #eee;
 		text-align: center;
-		padding-top: 180px;
+		padding-top: 100px;
+
+		> .intro-1-image{
+			> img{
+				max-width: 500px;
+			}
+		}
 
 		> h2{
-			text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+			//text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 			font-size: 3rem;
 			@media screen and (max-width: 600px) {
 				font-size: 1.8rem;
@@ -228,7 +235,7 @@ header{
 		}
 
 		> p {
-			text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+			//text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 			font-size: 1.4em;
 			@media screen and (max-width: 600px) {
 				font-size: 1em;
@@ -331,9 +338,11 @@ footer{
 		}
 
 		&.intro-4{
-			right: 57%;
-			//background: image-url('tasks-img.jpg')left top;
-			background-size: auto 100%;
+			right: 50%;
+			background: image-url('intro-4a.png')left top;
+			background-size: 100% auto;
+			background-position: center;
+			background-repeat: no-repeat;
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
@@ -342,12 +351,12 @@ footer{
 			-o-transform: translateY(-50%);
 			-ms-transform: translateY(-50%);
 			left: inherit;
-			width: 1100px;
+			width: 50%;
 			height: 631px;
 		}
 
 		&.intro-3{
-			background: image-url('intro-3.png') left top;
+			background: image-url('intro-3a.png') left top;
 			background-size: 100% auto;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -365,7 +374,7 @@ footer{
 
 		&.intro-2{
 			right: 50%;
-			background: image-url('intro-2.png')left top;
+			background: image-url('intro-2a.png')left top;
 			background-size: 100% auto;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -396,9 +405,12 @@ footer{
 			width: 55%;
 			height: 630px;
 		}
+
 		&.intro-5{
-			//background: image-url('table-img.png')left top;
-			background-size: auto 100%;
+			background: image-url('intro-5a.png') left top;
+			background-size: 100% auto;
+			background-position: center;
+			background-repeat: no-repeat;
 			position: absolute;
 			top: 50%;
 			transform: translateY(-50%);
@@ -407,7 +419,7 @@ footer{
 			-o-transform: translateY(-50%);
 			-ms-transform: translateY(-50%);
 			left: 45%;
-			width: 1100px;
+			width: 55%;
 			height: 630px;
 		}
 	}
@@ -732,6 +744,11 @@ footer{
 	padding: 80px 0;
 	text-align: center;
 	background-color: #fff;
+	background-image: image-url('intro-6a.svg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
 
 	h4{
 		color: #7B96A5;
