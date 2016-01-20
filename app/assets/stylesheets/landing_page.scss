@@ -248,6 +248,16 @@ header{
 			width: 100%;
 		}
 
+		> .header-order-text{
+			font-size: 18px;
+			color: #FFF;
+			text-align: center;
+
+			> a{
+				color: #F6BF59;
+			}
+		}
+
 		> .header-slogan{
 			position: relative;
 			color: #eee;
