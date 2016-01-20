@@ -18,6 +18,30 @@ p{
 	color: #353535;
 }
 
+.back-to-top-btn{
+	position: fixed;
+	bottom: 24px;
+	left: 24px;
+	width: 40px;
+	height: 40px;
+	z-index: 999;
+	border: 1px solid #FFF;
+	border-radius: 50%;
+	cursor: pointer;
+
+	i{
+		color: #FFF;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+}
+
 .fixed-navbar{
 	position: fixed;
 	top: 0;
