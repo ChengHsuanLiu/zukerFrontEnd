@@ -264,39 +264,46 @@
 
   $(document).on('scroll', function(){
 
-    var offet_1 = $('.scroll-page.intro-1').offset().top;
-    var offet_2 = $('.scroll-page.intro-2').offset().top;
-    var offet_3 = $('.scroll-page.intro-3').offset().top;
-    var offet_4 = $('.scroll-page.intro-4').offset().top;
-    var offet_5 = $('.scroll-page.intro-5').offset().top;
 
-    var current_offset = $(window).scrollTop();
+    var window_width = $(window).width();
 
-    if(current_offset > offet_1 - 300){
-      $('.info.intro-1').addClass('active');
-      $('.box-image.intro-1').addClass('active');
-    }
+    if(window_width < 600){
 
-    if(current_offset > offet_2 - 300){
-      $('.info.intro-2').addClass('active');
-      $('.box-image.intro-2').addClass('active');
-    }
+      var offet_1 = $('.scroll-page.intro-1').offset().top;
+      var offet_2 = $('.scroll-page.intro-2').offset().top;
+      var offet_3 = $('.scroll-page.intro-3').offset().top;
+      var offet_4 = $('.scroll-page.intro-4').offset().top;
+      var offet_5 = $('.scroll-page.intro-5').offset().top;
 
-    if(current_offset > offet_3 - 300){
-      $('.info.intro-3').addClass('active');
-      $('.box-image.intro-3').addClass('active');
+      var current_offset = $(window).scrollTop();
 
-    }
+      if(current_offset > offet_1 - 300){
+        $('.info.intro-1').addClass('active');
+        $('.box-image.intro-1').addClass('active');
+      }
 
-    if(current_offset > offet_4 - 300){
-      $('.info.intro-4').addClass('active');
-      $('.box-image.intro-4').addClass('active');
+      if(current_offset > offet_2 - 300){
+        $('.info.intro-2').addClass('active');
+        $('.box-image.intro-2').addClass('active');
+      }
 
-    }
+      if(current_offset > offet_3 - 300){
+        $('.info.intro-3').addClass('active');
+        $('.box-image.intro-3').addClass('active');
 
-    if(current_offset > offet_5 - 300){
-      $('.info.intro-5').addClass('active');
-      $('.box-image.intro-5').addClass('active');
+      }
+
+      if(current_offset > offet_4 - 300){
+        $('.info.intro-4').addClass('active');
+        $('.box-image.intro-4').addClass('active');
+
+      }
+
+      if(current_offset > offet_5 - 300){
+        $('.info.intro-5').addClass('active');
+        $('.box-image.intro-5').addClass('active');
+
+      }
 
     }
 
@@ -345,7 +352,7 @@
     console.log('reset');
   }
 
-
+/*
 
   $(window).bind('mousewheel', function(event) {
     var window_width = $(window).width();
@@ -372,5 +379,5 @@
     }
   });
 
-
+*/
 </script>
