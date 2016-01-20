@@ -262,6 +262,7 @@
     console.log(page_num);
   })
 
+
   $(document).on('scroll', function(){
 
 
@@ -310,6 +311,7 @@
   })
 
 
+
   function scrollPageFunc(page_num, dir){
     var page_num = page_num;
     var dir = dir;
@@ -352,12 +354,12 @@
     console.log('reset');
   }
 
-/*
+
 
   $(window).bind('mousewheel', function(event) {
     var window_width = $(window).width();
 
-    if(window_width < 600){
+    if(window_width > 600){
 
       if (event.originalEvent.wheelDelta >= 0) {
         if(state == 'active'){
@@ -379,5 +381,5 @@
     }
   });
 
-*/
+
 </script>

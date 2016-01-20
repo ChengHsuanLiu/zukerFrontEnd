@@ -331,6 +331,10 @@ footer{
 
 	&.intro-1{
 		background-color: #f7f8fa;
+
+		@media screen and (max-width: 600px) {
+			background-image: url(http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/tools.jpg);
+		}
 	}
 	&.intro-2{
 		//background-color: #EEEFF1;
