@@ -36,7 +36,7 @@
 <div class="scroll-page-container-inner">
 <header class="scroll-page order-1" page-order="1">
   <div class="header-mask"></div>
-  <div class="intro-1-image">
+  <div class="intro-1-image hide">
     <%= image_tag('intro-1a.svg') %>
   </div>
   <div class="header-info">
@@ -44,12 +44,38 @@
       <h2>學生租屋,就上租客</h2>
       <p>立即預約免費刊登服務,享受完整功能</p>
     </div>
-    <div class="header-call-to-action" style="margin-top: 16px;">
+    <div class="search-bar index">
+      <div class="row">
+        <div class="col m12 s12">
+          <div class="action">
+            <input class="" type="text" placeholder="搜尋學校..">
+          </div>
+          <div class="action">
+            <select class="browser-default">
+              <option value="1">不限房屋類型</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+          <div class="action">
+            <select class="browser-default">
+              <option value="1">不限期限</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+          <div class="submit-btn">
+            <a href="/search" class="btn">搜尋</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-call-to-action hide" style="margin-top: 16px;">
         <%= link_to "前往看房", '#', :class=>'btn btn--large' %>
         <%= link_to "預約刊登", '#', :class=>'btn btn--large' %>
         <!--<p><div class="fb-page" data-href="https://www.facebook.com/pages/Colorgy/1529686803975150" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="false"></div></p>-->
     </div>
-    <div class="arrow-down" style="margin-top: 48px;">
+    <div class="arrow-down hide" style="margin-top: 48px;">
       <i class="material-icons">keyboard_arrow_down</i></br>
       <i class="material-icons" style="margin-top: -20px;">keyboard_arrow_down</i>
     </div>
