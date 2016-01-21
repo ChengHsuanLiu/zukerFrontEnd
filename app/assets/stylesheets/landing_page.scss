@@ -366,10 +366,10 @@ footer{
 	overflow-x: hidden;
 
 	&.intro-1{
-		background-color: #f7f8fa;
+		background-color: #86BDB7;
 
 		@media screen and (max-width: 600px) {
-			background-image: url(http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/tools.jpg);
+			//background-image: url(http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/tools.jpg);
 		}
 	}
 	&.intro-2{
@@ -378,8 +378,8 @@ footer{
 		background-color: #F98A5F;
 	}
 	&.intro-3{
-		background-color: #f7f8fa;
-		background-image: url(http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/tools.jpg);
+		background-color: #86BDB7;
+		//background-image: url(http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/tools.jpg);
 	}
 	&.intro-4{
 		//background-color: #EEEFF1;
@@ -387,8 +387,8 @@ footer{
 		background-color: #F98A5F;
 	}
 	&.intro-5{
-		background-color: #f7f8fa;
-		background-image: url(http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/tools.jpg);
+		background-color: #86BDB7;
+		//background-image: url(http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/tools.jpg);
 	}
 
 	.box-image{
@@ -639,11 +639,6 @@ footer{
 	right: 0;
 	width: 100% !important;
 	height: 100% !important;
-
-	@media screen and (max-width: 600px) {
-		display: none;
-	}
-
 }
 
 .ricoh-theta-iframe{
@@ -747,6 +742,16 @@ footer{
 	  -o-transform: translate(-50%, -50%);
 		font-size: 30px;
 		color: #FFF;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.intro-1.info{
+		position: relative !important;
+		background-color: rgba(0,0,0,.4);
+		margin-top: 24px;
+		padding-left: 12px;
+		padding-right: 12px;
 	}
 }
 
