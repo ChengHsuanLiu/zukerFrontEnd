@@ -429,13 +429,43 @@
   }
 
 
+  $(window).on('wheel', function(e){
+    var eo = e.originalEvent;
+    if(Math.abs(eo.wheelDeltaX) < 10 && Math.abs(eo.wheelDeltaY) > 2){
+      e.preventDefault();
+
+      if(eo.wheelDeltaY < -20  /*&& !scope.item.swipedLeft*/){
+          // swipe left
+        console.log('down');
+        if(state == 'active'){
+          if(current_page == 7){
+            return false;
+          }
+          scrollPageFunc(current_page + 1, 'godown');
+        }
+      }
+
+      if(eo.wheelDeltaY > 20  /*&& scope.item.swipedLeft*/ ){
+          // swipe right
+        console.log('up');
+        if(state == 'active'){
+          if(current_page == 1){
+            return false;
+          }
+          scrollPageFunc(current_page - 1, 'goup');
+        }
+      }
+    }
+  });
+
+  /*
 
   $(window).bind('mousewheel', function(event) {
     var window_width = $(window).width();
 
     if(window_width > 600){
 
-      if (event.originalEvent.wheelDelta >= 0) {
+      if (event.originalEvent.wheelDelta >= 30) {
         if(state == 'active'){
           if(current_page == 1){
             return false;
@@ -454,6 +484,7 @@
 
     }
   });
+  */
 
 
 </script>
