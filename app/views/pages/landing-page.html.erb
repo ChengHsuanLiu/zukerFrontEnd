@@ -434,7 +434,7 @@
     if(Math.abs(eo.wheelDeltaX) < 10 && Math.abs(eo.wheelDeltaY) > 2){
       e.preventDefault();
 
-      if(eo.wheelDeltaY < -20  /*&& !scope.item.swipedLeft*/){
+      if(eo.wheelDeltaY < -10  /*&& !scope.item.swipedLeft*/){
           // swipe left
         console.log('down');
         if(state == 'active'){
@@ -445,7 +445,7 @@
         }
       }
 
-      if(eo.wheelDeltaY > 20  /*&& scope.item.swipedLeft*/ ){
+      if(eo.wheelDeltaY > 10  /*&& scope.item.swipedLeft*/ ){
           // swipe right
         console.log('up');
         if(state == 'active'){
