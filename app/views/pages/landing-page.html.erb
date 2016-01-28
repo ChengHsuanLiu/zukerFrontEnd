@@ -429,6 +429,10 @@
       console.log(translateValue);
       $('.scroll-page[page-order="' + i +'"]').css({
         'transform': 'translateY(' + translateValue + '%)',
+        '-webkit-transform': 'translateY(' + translateValue + '%)',
+        '-moz-transform': 'translateY(' + translateValue + '%)',
+        '-o-transform': 'translateY(' + translateValue + '%)',
+        '-ms-transform': 'translateY(' + translateValue + '%)',
       })
     }
 
