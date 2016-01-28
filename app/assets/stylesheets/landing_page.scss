@@ -510,13 +510,13 @@ footer{
 		-o-transition: all 2s;
 		-ms-transition: all 2s;
 
-		@media screen and (min-width: 600px) {
-	    -webkit-transition-delay: 1s; /* Safari */
-	    transition-delay: 1s;
-	    -moz-transition-delay: 1s;
-	    -o-transition-delay: 1s;
-	    -ms-transition-delay: 1s;
-	  }
+		// @media screen and (min-width: 600px) {
+	 //    -webkit-transition-delay: 1s; /* Safari */
+	 //    transition-delay: 1s;
+	 //    -moz-transition-delay: 1s;
+	 //    -o-transition-delay: 1s;
+	 //    -ms-transition-delay: 1s;
+	 //  }
 
 
 
@@ -631,6 +631,16 @@ footer{
 	}
 }
 
+#theta-viewer{
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
 .ricoh-theta-spherical-image{
 	position: absolute !important;
 	top: 0;
@@ -665,38 +675,45 @@ footer{
 		height: 100%;
 		width: 100%;
 		overflow: hidden;
-		transition: all 2s;
-		-webkit-transition: all 2s;
-		-moz-transition: all 2s;
-		-ms-transition: all 2s;
-		-o-transition: all 2s;
+		transition: all 1s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		-o-transition: all 0.5s;
 
 		&.order-1{
-			top: 0%;
+			// top: 0%;
+			transform: translateY(0%);
 		}
 
 		&.order-2{
-			top: 100%;
+			// top: 100%;
+			transform: translateY(100%);
 		}
 
 		&.order-3{
-			top: 200%;
+			// top: 200%;
+			transform: translateY(200%);
 		}
 
 		&.order-4{
-			top: 300%;
+			// top: 300%;
+			transform: translateY(300%);
 		}
 
 		&.order-5{
-			top: 400%;
+			// top: 400%;
+			transform: translateY(400%);
 		}
 
 		&.order-6{
-			top: 500%;
+			// top: 500%;
+			transform: translateY(500%);
 		}
 
 		&.order-7{
-			top: 600%;
+			// top: 600%;
+			transform: translateY(600%);
 		}
 	}
 }

@@ -96,7 +96,10 @@
 
 <section id="intro-1-section" class="intro-1-section service-intro-box table intro-1 scroll-page order-2" page-order="2">
   <blockquote data-width="500" data-height="375" class="ricoh-theta-spherical-image" >Post from RICOH THETA. - <a href="https://theta360.com/s/rYjkWexHYyDP4QvzW6HMzdZq8" target="_blank">Spherical Image - RICOH THETA</a></blockquote>
-  <script async src="https://theta360.com/widgets.js" charset="utf-8"></script>
+
+
+  <!-- <div id="theta-viewer"></div> -->
+
   <div class="container">
     <div class="row">
       <div class="col s12">
@@ -293,7 +296,14 @@
 </section>
 </div>
 </div>
+<script async src="https://theta360.com/widgets.js" charset="utf-8"></script>
 <script type="text/javascript">
+  /*global jQuery */
+  // (function ($) {
+  //     'use strict';
+  //     // #theta-viewerにパノラマ画像img/theta.jpgを表示
+  //     $("#theta-viewer").createThetaViewer('<%= image_path('theta-360.jpg') %>');
+  // }(jQuery));
 
   var current_page = 1;
   var state = 'active';
@@ -418,7 +428,7 @@
       var translateValue = (i - page_num)*(100);
       console.log(translateValue);
       $('.scroll-page[page-order="' + i +'"]').css({
-        'top': translateValue + '%',
+        'transform': 'translateY(' + translateValue + '%)',
       })
     }
 
@@ -428,7 +438,7 @@
       $('.box-image.intro-' + j).addClass('active');
     };
 
-    setTimeout(restTranslateState, 2000);
+    setTimeout(restTranslateState, 1000);
   }
 
   function restTranslateState(){
@@ -438,29 +448,36 @@
 
 
   $(window).on('wheel', function(e){
-    var eo = e.originalEvent;
-    if(Math.abs(eo.wheelDeltaX) < 10 && Math.abs(eo.wheelDeltaY) > 2){
-      e.preventDefault();
 
-      if(eo.wheelDeltaY < -10  /*&& !scope.item.swipedLeft*/){
-          // swipe left
-        console.log('down');
-        if(state == 'active'){
-          if(current_page == 7){
-            return false;
+
+    var window_width = $(window).width();
+
+    if(window_width > 600){
+
+      var eo = e.originalEvent;
+      if(Math.abs(eo.wheelDeltaX) < 10 && Math.abs(eo.wheelDeltaY) > 2){
+        e.preventDefault();
+
+        if(eo.wheelDeltaY < -10  /*&& !scope.item.swipedLeft*/){
+            // swipe left
+          console.log('down');
+          if(state == 'active'){
+            if(current_page == 7){
+              return false;
+            }
+            scrollPageFunc(current_page + 1, 'godown');
           }
-          scrollPageFunc(current_page + 1, 'godown');
         }
-      }
 
-      if(eo.wheelDeltaY > 10  /*&& scope.item.swipedLeft*/ ){
-          // swipe right
-        console.log('up');
-        if(state == 'active'){
-          if(current_page == 1){
-            return false;
+        if(eo.wheelDeltaY > 10  /*&& scope.item.swipedLeft*/ ){
+            // swipe right
+          console.log('up');
+          if(state == 'active'){
+            if(current_page == 1){
+              return false;
+            }
+            scrollPageFunc(current_page - 1, 'goup');
           }
-          scrollPageFunc(current_page - 1, 'goup');
         }
       }
     }
@@ -496,3 +513,4 @@
 
 
 </script>
+
