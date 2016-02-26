@@ -397,4 +397,14 @@
 	$(document).ready(function(){
 		$('select').material_select();
 	})
+
+	$(document).click(function() {
+    $(".dropdown-content.select-dropdown.multiple-select-dropdown").removeClass('active').css({ display: 'none' });
+    $(".dropdown-content.select-dropdown.multiple-select-dropdown").siblings('.select-dropdown').removeClass('active');
+	});
+	$(".dropdown-content.select-dropdown.multiple-select-dropdown").click(function(e) {
+	    e.stopPropagation(); // This is the preferred method.
+	    return false;        // This should not be used unless you do not want
+	                         // any click events registering inside the div
+	});
 </script>
